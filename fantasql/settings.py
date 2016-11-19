@@ -56,17 +56,17 @@ ROOT_URLCONF = 'fantasql.urls'
 
 
   
-
+password = 'fake_password'
 def read_password(filename):
     file = open(filename, 'r')
     password = file.read().strip()
     file.close()
-    return passwords
+    return password
 
-if os.path.isfile(BASE_DIR + '/password.txt'):
-    password = read_password(BASE_DIR + '/password.txt')
+if os.path.isfile(BASE_DIR + '/fantasql/password.txt'):
+    password = read_password(BASE_DIR + '/fantasql/password.txt')
 
-password = 'foobar'
+
 
 
 TEMPLATES = [
