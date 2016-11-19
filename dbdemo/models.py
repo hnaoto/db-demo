@@ -2,10 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Team(models.Model):
-    name = models.CharField(max_length=30)
-    city = models.CharField(max_length=30)
-    defenseID = models.ForeignKey(Defense)
+
 
 class Defense(models.Model):
     pointsAllowed = models.IntegerField(default=0)
@@ -18,3 +15,7 @@ class Defense(models.Model):
     puntRetRank = models.IntegerField(default=0)
     kickRetRank = models.IntegerField(default=0)
 
+class Team(models.Model):
+    name = models.CharField(max_length=30)
+    city = models.CharField(max_length=30)
+    defenseID = models.ForeignKey(Defense, default=-1)
