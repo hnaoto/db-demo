@@ -17,5 +17,5 @@ class Defense(models.Model):
 
 class Team(models.Model):
     name = models.CharField(max_length=30)
-    city = models.CharField(max_length=30)
+    # city = models.CharField(max_length=30)
     defenseID = models.ForeignKey(Defense, default=-1)
