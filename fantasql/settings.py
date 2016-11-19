@@ -52,6 +52,23 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'fantasql.urls'
 
+
+
+
+  
+
+def read_password(filename):
+    file = open(filename, 'r')
+    password = file.read().strip()
+    file.close()
+    return passwords
+
+if os.path.isfile(BASE_DIR + '/password.txt'):
+    password = read_password(BASE_DIR + '/password.txt')
+
+password = 'foobar'
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -74,12 +91,16 @@ WSGI_APPLICATION = 'fantasql.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+  'default': {
+      'ENGINE': 'django.db.backends.mysql',
+      'NAME': 'fantasql',
+      'USER': 'xx5uy',
+      'PASSWORD': password,
+      'HOST': '127.0.0.1',
+      }
+}    
 
 
 # Internationalization
