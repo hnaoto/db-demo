@@ -1,6 +1,6 @@
 *.pyc
-/rp/password.txt
-rp/password.txt
+/fantasql/password.txt
+fantasql/password.txt
 /media/uploads/*
 /media/uploads/
 media/uploads/*
