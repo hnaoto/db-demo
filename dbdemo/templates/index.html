@@ -28,20 +28,37 @@
  {% if team_list %}
  <table style="50%">
    <tr>
-       <th>Name</th> <th>City</th>
+    <th>Name</th> <th>City</th>
    </tr>
 {% for obj in team_list %}
 
    <tr>
-       <th>{{ obj.name }}</th> <th>{{ obj.city }}</th>
+      <td>{{ obj.name }}</td> <td>{{ obj.city }}</td>
    </tr>
 
 {% endfor %}
     </table>
+
+{% if contract_list %}
+     <table>
+     <tr><th>Players: </th>
+     {% for player in contract_list %}
+
+    <td>{{ player.playerName }}</td>
+     {% endfor %}
+
+     </tr>
+     </table>
+
+
+{% endif %}
+
+
  {% endif %}
 
 
-{#{{ player_list }}#}
+{{ player_list }}
 {#{{ team_list }}#}
+{{ contract_list }}
 </body>
 </html>

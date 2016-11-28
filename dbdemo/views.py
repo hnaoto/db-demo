@@ -11,6 +11,7 @@ from .models import Injury
 from .models import Suspended
 from .models import CareerStats
 from .models import SeasonOffensiveStats
+from .models import TeamPlayerRelation
 from django.db import connection,transaction
 
 def dictfetchall(cursor):
@@ -32,10 +33,23 @@ def index(request):
     cursor.execute('''SELECT * FROM dbdemo_Team WHERE name =%s''',[name])
     teamSet = dictfetchall(cursor)
 
+    print(teamSet)
+    teamID = teamSet[0]['id']
+    print(teamID)
+    cursor.execute('''SELECT p.id AS playerID,p.name AS playerName
+                      FROM dbdemo_Team AS t,dbdemo_Players AS p,dbdemo_TeamPlayerRelation AS c
+                      WHERE t.id = c.teamID_id AND p.id = c.pid_id AND t.id = %s''',[teamID])
+
+    # cursor.execute('''SELECT * FROM dbdemo_TeamPlayerRelation''')
+
+    contractSet = dictfetchall(cursor)
+
+
     cursor.close()
     context ={
         "player_list": playerSet,
         "team_list": teamSet,
+        "contract_list": contractSet,
 
     }
     return render(request,'index.html', context)

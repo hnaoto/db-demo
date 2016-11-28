@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/dbdemo/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <caret line="38" column="24" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -66,12 +66,18 @@
         <entry file="file://$PROJECT_DIR$/dbdemo/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1480357453000" expanded="true" signature="791:826" placeholder="select all f... Players" />
-                <marker date="1480357453000" expanded="true" signature="791:1141" placeholder="select all f... Players" />
-                <marker date="1480357453000" expanded="true" signature="900:940" placeholder="SELECT * FRO... dbdemo_Team" />
+                <marker date="1480359541000" expanded="true" signature="830:865" placeholder="select all f... Players" />
+                <marker date="1480359541000" expanded="true" signature="830:1652" placeholder="select all f... Players" />
+                <marker date="1480359541000" expanded="true" signature="939:979" placeholder="SELECT * FRO... dbdemo_Team" />
+                <marker date="1480359541000" expanded="true" signature="1116:1219" placeholder="SELECT p.id " />
+                <marker date="1480359541000" expanded="true" signature="1116:1290" placeholder="SELECT p.id dbdemo_Team" />
+                <marker date="1480359541000" expanded="true" signature="1116:1311" placeholder="SELECT p.id dbdemo_Team" />
+                <marker date="1480359541000" expanded="true" signature="1116:1336" placeholder="SELECT p.id dbdemo_Team" />
+                <marker date="1480359541000" expanded="true" signature="1375:1414" placeholder="SELECT * FRO... dbdemo_TeamPlayerRelation" />
+                <marker date="1480359541000" expanded="true" signature="1375:1652" placeholder="SELECT * FRO... dbdemo_TeamPlayerRelation" />
               </folding>
             </state>
           </provider>
@@ -80,9 +86,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dbdemo/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.676259">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.21582733">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -496,7 +504,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="django-line">
           <url>file://$PROJECT_DIR$/dbdemo/templates/index.html</url>
-          <line>44</line>
+          <line>60</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -534,9 +542,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1480357453000" expanded="true" signature="791:826" placeholder="select all f... Players" />
-            <marker date="1480357453000" expanded="true" signature="791:1141" placeholder="select all f... Players" />
-            <marker date="1480357453000" expanded="true" signature="900:940" placeholder="SELECT * FRO... dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="830:865" placeholder="select all f... Players" />
+            <marker date="1480359541000" expanded="true" signature="830:1652" placeholder="select all f... Players" />
+            <marker date="1480359541000" expanded="true" signature="939:979" placeholder="SELECT * FRO... dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="1116:1219" placeholder="SELECT p.id " />
+            <marker date="1480359541000" expanded="true" signature="1116:1290" placeholder="SELECT p.id dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="1116:1311" placeholder="SELECT p.id dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="1116:1336" placeholder="SELECT p.id dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="1375:1414" placeholder="SELECT * FRO... dbdemo_TeamPlayerRelation" />
+            <marker date="1480359541000" expanded="true" signature="1375:1652" placeholder="SELECT * FRO... dbdemo_TeamPlayerRelation" />
           </folding>
         </state>
       </provider>
@@ -576,7 +590,7 @@
     <entry file="file://$PROJECT_DIR$/dbdemo/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -584,21 +598,29 @@
     <entry file="file://$PROJECT_DIR$/dbdemo/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1480357453000" expanded="true" signature="791:826" placeholder="select all f... Players" />
-            <marker date="1480357453000" expanded="true" signature="791:1141" placeholder="select all f... Players" />
-            <marker date="1480357453000" expanded="true" signature="900:940" placeholder="SELECT * FRO... dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="830:865" placeholder="select all f... Players" />
+            <marker date="1480359541000" expanded="true" signature="830:1652" placeholder="select all f... Players" />
+            <marker date="1480359541000" expanded="true" signature="939:979" placeholder="SELECT * FRO... dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="1116:1219" placeholder="SELECT p.id " />
+            <marker date="1480359541000" expanded="true" signature="1116:1290" placeholder="SELECT p.id dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="1116:1311" placeholder="SELECT p.id dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="1116:1336" placeholder="SELECT p.id dbdemo_Team" />
+            <marker date="1480359541000" expanded="true" signature="1375:1414" placeholder="SELECT * FRO... dbdemo_TeamPlayerRelation" />
+            <marker date="1480359541000" expanded="true" signature="1375:1652" placeholder="SELECT * FRO... dbdemo_TeamPlayerRelation" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbdemo/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.676259">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.21582733">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
