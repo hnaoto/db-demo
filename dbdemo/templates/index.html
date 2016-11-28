@@ -4,11 +4,44 @@
 
 <body>
 <form>
-    <input style = "width:50%" type="text" name = "n" placeholder="Search by name(Team or Player)" value='{{ request.get.n }}'/>
+    <input style = "width:50%" type="text" name = "n" placeholder="Search by name(Team or Player)" value='{{ request.GET.n }}'/>
     <input type="submit" value="search"/>
 
 </form>
 
-{{ object_list }}
+ {% if player_list %}
+ <table style="50%">
+   <tr>
+       <th>Name</th> <th>Experience</th> <th>Position</th>
+   </tr>
+{% for obj in player_list %}
+
+   <tr>
+       <th>{{ obj.name }}</th> <th>{{ obj.experience }}</th><th>{{ obj.position }}</th>
+   </tr>
+
+{% endfor %}
+    </table>
+ {% endif %}
+
+
+ {% if team_list %}
+ <table style="50%">
+   <tr>
+       <th>Name</th> <th>City</th>
+   </tr>
+{% for obj in team_list %}
+
+   <tr>
+       <th>{{ obj.name }}</th> <th>{{ obj.city }}</th>
+   </tr>
+
+{% endfor %}
+    </table>
+ {% endif %}
+
+
+{#{{ player_list }}#}
+{#{{ team_list }}#}
 </body>
 </html>
