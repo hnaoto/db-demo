@@ -1,0 +1,14 @@
+<!--DOCTYPE html-->
+<html>
+
+
+<body>
+<form>
+    <input style = "width:50%" type="text" name = "n" placeholder="Search by name(Team or Player)" value='{{ request.get.n }}'/>
+    <input type="submit" value="search"/>
+
+</form>
+
+{{ object_list }}
+</body>
+</html>

@@ -4,6 +4,14 @@ from django.db import models
 
 
 
+
+
+class Team(models.Model):
+    name = models.CharField(max_length=30)
+    city = models.CharField(max_length=30)
+    def __str__(self):
+        return "%s at %s" % (self.name,self.city)
+
 class Defense(models.Model):
     pointsAllowed = models.IntegerField(default=0)
     sacks = models.IntegerField(default=0)
@@ -14,23 +22,32 @@ class Defense(models.Model):
     rushRank = models.IntegerField(default=0)
     puntRetRank = models.IntegerField(default=0)
     kickRetRank = models.IntegerField(default=0)
+    teamID = models.ForeignKey(Team,null=True)
+    def __str__(self):
+        return "%s" % (self.teamID.name)
 
-class Team(models.Model):
-    name = models.CharField(max_length=30)
-    city = models.CharField(max_length=30)
-    defenseID = models.ForeignKey(Defense, default=-1)
+
 
 class Players(models.Model):
     name = models.CharField(max_length=20)
     experience = models.IntegerField(default=0)
-    teamID = models.ForeignKey(Team)
     position = models.CharField(max_length=2)
+    def __str__(self):
+        return "%s" % (self.name)
 
+
+class TeamPlayerRelation(models.Model):
+    teamId = models.ForeignKey(Team)
+    pid = models.ForeignKey(Players)
+    def __str__(self):
+        return "%s contract with player: %s" % (self.teamId.name,self.pid.name)
 class PlayerRank(models.Model):
     pid = models.ForeignKey(Players)
     espnRank = models.IntegerField(default=-1)
     nflRank = models.IntegerField(default=-1)
     sugPos = models.CharField(max_length=3)
+    def __str__(self):
+        return "%s" % (self.pid.name)
 
 
 
@@ -41,19 +58,29 @@ class Kicker(models.Model):
     xpa = models.IntegerField(default=0)
     xp = models.IntegerField(default=0)
     pid = models.ForeignKey(Players)
+    def __str__(self):
+        return "%s" % (self.pid.name)
+
 
 class Consistency(models.Model):
+    pid = models.ForeignKey(Players,null=True)
     score = models.FloatField(default=0)
     eliteScore = models.FloatField(default=0)
     topScore = models.FloatField(default=0)
     subparScore = models.FloatField(default=0)
+    def __str__(self):
+        return "%s" % (self.pid.name)
+
 
 class Injury(models.Model):
-    pid = models.ForeignKey(Players)
+
     ir = models.BooleanField(default=False)
     status = models.CharField(max_length=5)
     dfy = models.BooleanField(default=False)
     injuryName = models.CharField(max_length=20)
+    pid = models.ForeignKey(Players)
+    def __str__(self):
+        return "%s" % (self.pid.name)
 
 class Suspended(models.Model):
     pid = models.ForeignKey(Players)
@@ -61,6 +88,8 @@ class Suspended(models.Model):
     status = models.CharField(max_length=5)
     susLength = models.IntegerField(default=0)
     dfy = models.BooleanField(default=False)
+    def __str__(self):
+        return "%s" % (self.pid.name)
 
 
 class SeasonOffensiveStats(models.Model):
@@ -75,6 +104,8 @@ class SeasonOffensiveStats(models.Model):
     fumblesLost = models.IntegerField(default=0)
     twoPtConversion = models.IntegerField(default=0)
     passTDs = models.IntegerField(default=0)
+    def __str__(self):
+        return "%s" % (self.pid.name)
 
 class CareerStats(models.Model):
     pid = models.ForeignKey(Players)
@@ -88,5 +119,7 @@ class CareerStats(models.Model):
     fumblesLost = models.IntegerField(default=0)
     twoPtConversion = models.IntegerField(default=0)
     passTDs = models.IntegerField(default=0)
+    def __str__(self):
+        return "%s" % (self.pid.name)
 
 
