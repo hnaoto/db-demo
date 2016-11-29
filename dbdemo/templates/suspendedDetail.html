@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suspended Detail</title>
+</head>
+<body>
+{% for d in name_list %}
+   <h1>{{ d.name }}</h1>
+{% endfor %}
+{% for d in Suspend_list %}
+    <table style="50%">
+        <tr>
+            {% for key,values in d.items %}
+
+                {% if key != 'pid_id' %}
+                    <th>{{ key }} </th>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+
+            {% for key,value in d.items %}
+                {% if key != 'pid_id' %}
+                    <th>{{ value }} </th>
+                {% endif %}
+            {% endfor %}
+        </tr>
+
+
+    </table>
+{% endfor %}
+
+</body>
+</html>

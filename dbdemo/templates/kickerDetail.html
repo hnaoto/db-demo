@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kicker Detail</title>
+</head>
+<body>
+{% for d in name_list %}
+   <h1>{{ d.name }}</h1>
+{% endfor %}
+    {% for d in Kicker_list %}
+        <table style="50%">
+            <tr>
+                {% for key,values in d.items %}
+
+                    {% if key != 'pid_id' %}
+                    <th>{{ key }} </th>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            <tr>
+
+                {% for key,value in d.items %}
+
+                    {% if key != 'pid_id' %}
+                    <td>{{ value }}</td>
+                    {% endif %}
+
+                {% endfor %}
+            </tr>
+
+
+        </table>
+    {% endfor %}
+
+</body>
+</html>
