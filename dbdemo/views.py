@@ -168,6 +168,225 @@ def index(request):
     }
     return render(request,'index.html', context)
 
+
+def compareList(request):
+    print('submited')
+    name = request.COOKIES.get('pOne')
+    InjurySet1={}
+    SuspendedSet1 = {}
+    RankSet1 = {}
+    ConsistencySet1 = {}
+    SeasonSet1 = {}
+    CareerSet1 = {}
+    Kicker1 = {}
+    teamBelong1 = {}
+
+    InjurySet2={}
+    SuspendedSet2 = {}
+    RankSet2 = {}
+    ConsistencySet2 = {}
+    SeasonSet2 = {}
+    CareerSet2 = {}
+    Kicker2 = {}
+    teamBelong2 = {}
+
+    if name:
+        cursor = connection.cursor()
+
+        cursor.execute('''SELECT * FROM dbdemo_Players WHERE name =%s''',[name])
+
+        playerSet1  = dictfetchall(cursor)
+
+
+        if playerSet1:
+            playerID = playerSet1[0]['id']
+
+            cursor.execute('''SELECT t.name AS name
+                              FROM dbdemo_Team AS t,dbdemo_Players AS p,dbdemo_TeamPlayerRelation AS c
+                              WHERE t.id = c.teamID_id AND p.id = c.pid_id AND p.id = %s''',[playerID])
+
+            teamBelong1 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+                      FROM dbdemo_Injury AS r
+                      Where EXISTS
+                        (SELECT *
+                        FROM dbdemo_Players as p
+                        WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+            InjurySet1 = dictfetchall(cursor)
+
+            cursor.execute('''SELECT *
+                      FROM dbdemo_Suspended AS r
+                      Where EXISTS
+                        (SELECT *
+                        FROM dbdemo_Players as p
+                        WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+            SuspendedSet1 = dictfetchall(cursor)
+
+            cursor.execute('''SELECT *
+                              FROM dbdemo_PlayerRank AS r
+                              Where EXISTS
+                                (SELECT *
+                                FROM dbdemo_Players as p
+                                WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            RankSet1 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+                      FROM dbdemo_Consistency AS r
+                      Where EXISTS
+                        (SELECT *
+                        FROM dbdemo_Players as p
+                        WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            ConsistencySet1 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+              FROM dbdemo_SeasonOffensiveStats AS r
+              Where EXISTS
+                (SELECT *
+                FROM dbdemo_Players as p
+                WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            SeasonSet1 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+                      FROM dbdemo_CareerStats AS r
+                      Where EXISTS
+                        (SELECT *
+                        FROM dbdemo_Players as p
+                        WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            CareerSet1 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+              FROM dbdemo_Kicker AS r
+              Where EXISTS
+                (SELECT *
+                FROM dbdemo_Players as p
+                WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            Kicker1 = dictfetchall(cursor)
+
+
+        name = request.COOKIES.get('pTwo')
+        if name:
+                    cursor.execute('''SELECT * FROM dbdemo_Players WHERE name =%s''',[name])
+
+        playerSet2  = dictfetchall(cursor)
+
+
+        if playerSet2:
+            playerID = playerSet2[0]['id']
+
+            cursor.execute('''SELECT t.name AS name
+                              FROM dbdemo_Team AS t,dbdemo_Players AS p,dbdemo_TeamPlayerRelation AS c
+                              WHERE t.id = c.teamID_id AND p.id = c.pid_id AND p.id = %s''',[playerID])
+
+            teamBelong2 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+                      FROM dbdemo_Injury AS r
+                      Where EXISTS
+                        (SELECT *
+                        FROM dbdemo_Players as p
+                        WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+            InjurySet2 = dictfetchall(cursor)
+
+            cursor.execute('''SELECT *
+                      FROM dbdemo_Suspended AS r
+                      Where EXISTS
+                        (SELECT *
+                        FROM dbdemo_Players as p
+                        WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+            SuspendedSet2 = dictfetchall(cursor)
+
+            cursor.execute('''SELECT *
+                              FROM dbdemo_PlayerRank AS r
+                              Where EXISTS
+                                (SELECT *
+                                FROM dbdemo_Players as p
+                                WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            RankSet2 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+                      FROM dbdemo_Consistency AS r
+                      Where EXISTS
+                        (SELECT *
+                        FROM dbdemo_Players as p
+                        WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            ConsistencySet2 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+              FROM dbdemo_SeasonOffensiveStats AS r
+              Where EXISTS
+                (SELECT *
+                FROM dbdemo_Players as p
+                WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            SeasonSet2 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+                      FROM dbdemo_CareerStats AS r
+                      Where EXISTS
+                        (SELECT *
+                        FROM dbdemo_Players as p
+                        WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            CareerSet2 = dictfetchall(cursor)
+
+
+            cursor.execute('''SELECT *
+              FROM dbdemo_Kicker AS r
+              Where EXISTS
+                (SELECT *
+                FROM dbdemo_Players as p
+                WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
+
+            Kicker2 = dictfetchall(cursor)
+
+
+
+
+
+
+
+    cursor.close()
+    context ={
+        "player_list1": playerSet1,
+        "TeamBelong_list1":teamBelong1,
+        "Injury_list1": InjurySet1,
+        "Suspended_list1": SuspendedSet1,
+        "Consistency_list1": ConsistencySet1,
+        "Season_list1": SeasonSet1,
+        "Career_list1": CareerSet1,
+        "Kicker_list1": Kicker1,
+        "Rank_list1":RankSet1,
+        "player_list2": playerSet2,
+        "TeamBelong_list2":teamBelong2,
+        "Injury_list2": InjurySet2,
+        "Suspended_list2": SuspendedSet2,
+        "Consistency_list2": ConsistencySet2,
+        "Season_list2": SeasonSet2,
+        "Career_list2": CareerSet2,
+        "Kicker_list2": Kicker2,
+        "Rank_list2":RankSet2,
+
+    }
+    return render(request,'compare.html', context)
+
+
 def injuryDetail(request,person_id):
     cursor = connection.cursor()
     cursor.execute('''SELECT *

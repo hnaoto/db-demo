@@ -40,30 +40,25 @@
 </head>
 
 <body>
-<a class="button" href="/advanceSearch/">Change to Advance People Search</a>
-<a class="button" href="/compareList/">Compare List</a>
+
+<a class="button" href="/">Back to Search</a>
 
 
-<form>
-    <input style = "width:50%" type="text" name = "n" placeholder="Search by name(Team or Player)" value='{{ request.GET.n }}'/>
-    <input type="submit" value="search"/>
-
-</form>
 
 
-{% if player_list %}
-    <button id="addButton" onclick="add();">Add this Player to List</button>
+{% if player_list1 %}
+
     <table style="50%">
         <tr>
             <th>Name</th> <th>Team</th> <th>Experience</th> <th>Position</th><th>Injury</th>
             <th>Suspended</th><th>Kicker</th>
         </tr>
-        {% for obj in player_list %}
+        {% for obj in player_list1 %}
 
             <tr>
                 <td>{{ obj.name }}</td>
-                {% if TeamBelong_list %}
-                    {% for team in TeamBelong_list %}
+                {% if TeamBelong_list1 %}
+                    {% for team in TeamBelong_list1 %}
                     <td>
 
                         <a class="button" method="POST" href="/?n={{ team.name }}">{{ team.name }}</a>
@@ -78,7 +73,7 @@
 
 
                 <td>{{ obj.experience }}</td><td>{{ obj.position }}</td>
-                {% if Injury_list %}
+                {% if Injury_list1 %}
                     <td>
 
                         <a  class="button" method="POST" href="/Injury/Detail/{{ obj.id }}/">True</a>
@@ -89,7 +84,7 @@
                     <td>False</td>
                 {% endif %}
 
-                {% if Suspended_list %}
+                {% if Suspended_list1 %}
                     <td>
 
                         <a  class="button" method="POST" href="/Suspended/Detail/{{ obj.id }}/">True</a>
@@ -98,7 +93,7 @@
                 {% else %}
                     <td>False</td>
                 {% endif %}
-                {% if Kicker_list %}
+                {% if Kicker_list1 %}
                     <td>
 
                         <a  class="button" method="POST" href="/Kicker/Detail/{{ obj.id }}/">True</a>
@@ -113,7 +108,7 @@
         {% endfor %}
     </table>
 
-    {% for d in Rank_list %}
+    {% for d in Rank_list1 %}
         <table style="50%">
             <tr>
                 <th></th>
@@ -137,7 +132,7 @@
 
 
 
-    {% for d in Consistency_list %}
+    {% for d in Consistency_list1 %}
         <table style="50%">
             <tr><th></th>
                 {% for key,values in d.items %}
@@ -159,7 +154,7 @@
     {% endfor %}
 
 
-    {% for d in Season_list %}
+    {% for d in Season_list1 %}
         <table style="50%">
             <tr><th></th>
                 {% for key,values in d.items %}
@@ -180,7 +175,7 @@
         </table>
     {% endfor %}
 
-    {% for d in Career_list %}
+    {% for d in Career_list1 %}
         <table style="50%">
             <tr><th></th>
                 {% for key,values in d.items %}
@@ -200,53 +195,169 @@
 
         </table>
     {% endfor %}
-{% else %}
-    <h1>No Team or Player has that name.Please try again!</h1>
+
 
 {% endif %}
 
 
+{% if player_list2 %}
+
+    <table style="50%">
+        <tr>
+            <th>Name</th> <th>Team</th> <th>Experience</th> <th>Position</th><th>Injury</th>
+            <th>Suspended</th><th>Kicker</th>
+        </tr>
+        {% for obj in player_list2 %}
+
+            <tr>
+                <td>{{ obj.name }}</td>
+                {% if TeamBelong_list2 %}
+                    {% for team in TeamBelong_list2 %}
+                    <td>
+
+                        <a class="button" method="POST" href="/?n={{ team.name }}">{{ team.name }}</a>
+
+                    </td>
+                    {% endfor %}
+
+                {% else %}
+                    <td>Don't have team</td>
+                {% endif %}
 
 
-{% if defense_list %}
-    {% for d in defense_list %}
+
+                <td>{{ obj.experience }}</td><td>{{ obj.position }}</td>
+                {% if Injury_list2 %}
+                    <td>
+
+                        <a  class="button" method="POST" href="/Injury/Detail/{{ obj.id }}/">True</a>
+
+                    </td>
+
+                {% else %}
+                    <td>False</td>
+                {% endif %}
+
+                {% if Suspended_list2 %}
+                    <td>
+
+                        <a  class="button" method="POST" href="/Suspended/Detail/{{ obj.id }}/">True</a>
+
+                    </td>
+                {% else %}
+                    <td>False</td>
+                {% endif %}
+                {% if Kicker_list2 %}
+                    <td>
+
+                        <a  class="button" method="POST" href="/Kicker/Detail/{{ obj.id }}/">True</a>
+
+                    </td>
+                {% else %}
+                    <td>False</td>
+                {% endif %}
+
+            </tr>
+
+        {% endfor %}
+    </table>
+
+    {% for d in Rank_list2 %}
         <table style="50%">
-
-            {% for key,values in d.items %}
-                <tr>
-
-                    <th>{{ key }} :</th>
-                    <td>{{ values }}</td>
+            <tr>
+                <th></th>
+                {% for key,values in d.items %}
 
 
+                    <th>{{ key }} </th>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>Rank: </td>
+                {% for key,value in d.items %}
+                    <td>{{ value }}</td>
 
-                </tr>
-            {% endfor %}
+                {% endfor %}
+            </tr>
 
 
         </table>
     {% endfor %}
+
+
+
+    {% for d in Consistency_list2 %}
+        <table style="50%">
+            <tr><th></th>
+                {% for key,values in d.items %}
+
+
+                    <th>{{ key }} </th>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>Consistency: </td>
+                {% for key,value in d.items %}
+                    <td>{{ value }}</td>
+
+                {% endfor %}
+            </tr>
+
+
+        </table>
+    {% endfor %}
+
+
+    {% for d in Season_list2 %}
+        <table style="50%">
+            <tr><th></th>
+                {% for key,values in d.items %}
+
+
+                    <th>{{ key }} </th>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>Season Stats: </td>
+                {% for key,value in d.items %}
+                    <td>{{ value }}</td>
+
+                {% endfor %}
+            </tr>
+
+
+        </table>
+    {% endfor %}
+
+    {% for d in Career_list2 %}
+        <table style="50%">
+            <tr><th></th>
+                {% for key,values in d.items %}
+
+
+                    <th>{{ key }} </th>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>Career Stats: </td>
+                {% for key,value in d.items %}
+                    <td>{{ value }}</td>
+
+                {% endfor %}
+            </tr>
+
+
+        </table>
+    {% endfor %}
+
+
 {% endif %}
 
-{% if contract_list %}
-    <table>
-        <tr><th>Players: </th>
-         
-            {% for player in contract_list %}
 
 
-                <td>
-
-                    <a class="button" method="POST" href="/?n={{ player.playerName }}">{{ player.playerName }}</a>
-
-                </td>
-            {% endfor %}
-
-        </tr>
-    </table>
 
 
-{% endif %}
+
 
 
 
