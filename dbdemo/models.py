@@ -34,6 +34,8 @@ class Players(models.Model):
         ('RB','Running Back'),
         ('WR','Wide Receiver'),
         ('TE','Tight End'),
+        ('KI','Kicker'),
+        ('DE','Defense'),
     )
     name = models.CharField(max_length=20)
     experience = models.IntegerField(default=0)
@@ -54,6 +56,8 @@ class PlayerRank(models.Model):
         ('RB','Running Back'),
         ('WR','Wide Receiver'),
         ('TE','Tight End'),
+        ('KI','Kicker'),
+        ('DE','Defense'),
     )
     pid = models.ForeignKey(Players)
     espnRank = models.IntegerField(default=-1)

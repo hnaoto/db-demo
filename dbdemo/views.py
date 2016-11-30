@@ -739,7 +739,7 @@ def CareerStats(request):
           AND r.recYards > %d
           AND r.rushTDs > %d
           AND r.recTDs > %d
-          AND r.interceptions > %d
+          AND r.interceptions < %d
           AND r.fumblesLost < %d
           AND r.twoPtConversion > %d
           AND r.passTDs > %d
@@ -808,7 +808,7 @@ def SeasonOffensiveStats(request):
           AND r.recYards > %d
           AND r.rushTDs > %d
           AND r.recTDs > %d
-          AND r.interceptions > %d
+          AND r.interceptions < %d
           AND r.fumblesLost < %d
           AND r.twoPtConversion > %d
           AND r.passTDs > %d
