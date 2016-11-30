@@ -13,6 +13,7 @@ from .models import CareerStats
 from .models import SeasonOffensiveStats
 from .models import TeamPlayerRelation
 from django.template import RequestContext
+from .forms import PlayerForm, ConsistencyForm,PlayerRankForm,KickerForm,CareerStatsForm,SeasonOffensiveStatsForm
 import simplejson
 from django.http import HttpResponse, HttpResponseRedirect
 from django.db import connection,transaction
@@ -235,32 +236,395 @@ def kickerDetail(request,person_id):
 
 
 def advanceSearch(request):
-    context = {
+
+    playerRankForm = PlayerRankForm(request.POST or None)
+    playerForm = PlayerForm(request.POST or None)
+    consistencyForm = ConsistencyForm(request.POST or None)
+    kickerForm = KickerForm(request.POST or None)
+    careerStatsForm = CareerStatsForm(request.POST or None)
+    seasonOffensiveStatsForm = SeasonOffensiveStatsForm(request.POST or None)
+
+
+
+
+    context={
+        "PlayerRankForm":playerRankForm,
+        "PlayerForm":playerForm,
+        "ConsistencyForm":consistencyForm,
+        "KickerForm":kickerForm,
+        "CareerStatsForm":careerStatsForm,
+        "SeasonOffensiveStatsForm":seasonOffensiveStatsForm,
         "existence":True,
     }
-    return render( request,'advanceSearch.html',context)
+    return render(request,'advanceSearch.html',context)
+    # context = {
+    #     "existence":False,
+    # }
+    # return render( request,'advanceSearch.html',context)
 
 
-def changeTable(request):
-    GET = request.GET
+
+#
+# context={
+#         "PlayerRankForm":playerRankForm,
+#         "PlayerForm":playerForm,
+#         "ConsistencyForm":consistencyForm,
+#         "KickerForm":kickerForm,
+#         "CareerStatsForm":careerStatsForm,
+#         "SeasonOffensiveStatsForm":seasonOffensiveStatsForm,
+#         "existence":True,
+#     }
+
+
+def Player(request):
+    form = PlayerForm(request.POST or None)
+
+    if form.is_valid():
+        exp = form.cleaned_data.get('experience')
+        position = form.cleaned_data.get('position')
+    exp = int(exp)
     cursor = connection.cursor()
-    if GET.has_key(u'selection'):
+    sql = '''SELECT name
+          FROM dbdemo_Players AS p
+          Where p.experience > %d
+          AND p.position = "%s"'''% (int(exp),position)
+    cursor.execute(sql)
+    result = dictfetchall(cursor)
+    if result:
+        # print(result[0].get('name'))
+        # url = '/?n=%s'% result[0].get('name')
+        context={
+            "player_list":result,
+        }
 
-        selection = GET[u'selection']
+        return render(request,'playerMatchingCriteria.html',context)
+
+    else:
+
+        playerRankForm = PlayerRankForm(request.POST or None)
+        playerForm = PlayerForm(request.POST or None)
+        consistencyForm = ConsistencyForm(request.POST or None)
+        kickerForm = KickerForm(request.POST or None)
+        careerStatsForm = CareerStatsForm(request.POST or None)
+        seasonOffensiveStatsForm = SeasonOffensiveStatsForm(request.POST or None)
 
 
 
-    cursor.execute('''SELECT COLUMN_NAME
-                      FROM INFORMATION_SCHEMA.COLUMNS
-                      WHERE TABLE_SCHEMA='fantasql'
-                      AND TABLE_NAME=%s;''',[selection])
-    columns = dictfetchall(cursor)
-    context = {'result':columns}
-    print(columns)
-    json = simplejson.dumps(context)
-    return HttpResponse(json, content_type='application/json')
 
-def advanceSearchAction(request):
-    received_json_data=simplejson.loads(request.body)
-    print(received_json_data)
-    return render( request,'advanceSearch.html')
+        context={
+            "PlayerRankForm":playerRankForm,
+            "PlayerForm":playerForm,
+            "ConsistencyForm":consistencyForm,
+            "KickerForm":kickerForm,
+            "CareerStatsForm":careerStatsForm,
+            "SeasonOffensiveStatsForm":seasonOffensiveStatsForm,
+            "existence":False,
+        }
+        return render(request,'advanceSearch.html',context)
+
+def PlayerRank(request):
+    form = PlayerRankForm(request.POST or None)
+
+    if form.is_valid():
+        espn = form.cleaned_data.get('espnRank')
+        nfl = form.cleaned_data.get('nflRank')
+        pos = form.cleaned_data.get('sugPos')
+
+
+    cursor = connection.cursor()
+    sql = '''SELECT name
+          FROM dbdemo_Players AS p
+          Where EXISTS (
+          SELECT *
+          FROM dbdemo_PlayerRank as r
+          WHERE r.sugPos = "%s"
+          AND r.espnRank < %d
+          AND r.nflRank < %d
+          AND p.id = r.pid_id)'''% (pos,espn,nfl)
+    print(sql)
+    cursor.execute(sql)
+    result = dictfetchall(cursor)
+    if result:
+        # print(result[0].get('name'))
+        # url = '/?n=%s'% result[0].get('name')
+        context={
+            "player_list":result,
+        }
+
+        return render(request,'playerMatchingCriteria.html',context)
+
+
+    else:
+
+        playerRankForm = PlayerRankForm(request.POST or None)
+        playerForm = PlayerForm(request.POST or None)
+        consistencyForm = ConsistencyForm(request.POST or None)
+        kickerForm = KickerForm(request.POST or None)
+        careerStatsForm = CareerStatsForm(request.POST or None)
+        seasonOffensiveStatsForm = SeasonOffensiveStatsForm(request.POST or None)
+
+
+
+
+        context={
+            "PlayerRankForm":playerRankForm,
+            "PlayerForm":playerForm,
+            "ConsistencyForm":consistencyForm,
+            "KickerForm":kickerForm,
+            "CareerStatsForm":careerStatsForm,
+            "SeasonOffensiveStatsForm":seasonOffensiveStatsForm,
+            "existence":False,
+        }
+        return render(request,'advanceSearch.html',context)
+
+
+def Consistency(request):
+    form = ConsistencyForm(request.POST or None)
+
+    if form.is_valid():
+        score = form.cleaned_data.get('score')
+        elite = form.cleaned_data.get('eliteScore')
+        top = form.cleaned_data.get('topScore')
+        subpar = form.cleaned_data.get('subparScore')
+
+
+    cursor = connection.cursor()
+    sql = '''SELECT name
+          FROM dbdemo_Players AS p
+          Where EXISTS (
+          SELECT *
+          FROM dbdemo_Consistency as r
+          WHERE r.score > %d
+          AND r.eliteScore > %d
+          AND r.topScore > %d
+          AND r.subparScore > %d
+          AND p.id = r.pid_id)'''% (score,elite,top,subpar)
+    print(sql)
+    cursor.execute(sql)
+    result = dictfetchall(cursor)
+    if result:
+        # print(result[0].get('name'))
+        # url = '/?n=%s'% result[0].get('name')
+        context={
+            "player_list":result,
+        }
+
+        return render(request,'playerMatchingCriteria.html',context)
+
+    else:
+
+        playerRankForm = PlayerRankForm(request.POST or None)
+        playerForm = PlayerForm(request.POST or None)
+        consistencyForm = ConsistencyForm(request.POST or None)
+        kickerForm = KickerForm(request.POST or None)
+        careerStatsForm = CareerStatsForm(request.POST or None)
+        seasonOffensiveStatsForm = SeasonOffensiveStatsForm(request.POST or None)
+
+
+
+
+        context={
+            "PlayerRankForm":playerRankForm,
+            "PlayerForm":playerForm,
+            "ConsistencyForm":consistencyForm,
+            "KickerForm":kickerForm,
+            "CareerStatsForm":careerStatsForm,
+            "SeasonOffensiveStatsForm":seasonOffensiveStatsForm,
+            "existence":False,
+        }
+        return render(request,'advanceSearch.html',context)
+
+
+def Kicker(request):
+    form = KickerForm(request.POST or None)
+
+    if form.is_valid():
+        fd = form.cleaned_data.get('fg')
+        fga = form.cleaned_data.get('fga')
+        xpa = form.cleaned_data.get('xpa')
+        xp = form.cleaned_data.get('xp')
+
+
+    cursor = connection.cursor()
+    sql = '''SELECT name
+          FROM dbdemo_Players AS p
+          Where EXISTS (
+          SELECT *
+          FROM dbdemo_Kicker as r
+          WHERE r.fg > %d
+          AND r.fga > %d
+          AND r.xpa > %d
+          AND r.xp > %d
+          AND p.id = r.pid_id)'''% (fd,fga,xpa,xp)
+    print(sql)
+    cursor.execute(sql)
+    result = dictfetchall(cursor)
+    if result:
+        # print(result[0].get('name'))
+        # url = '/?n=%s'% result[0].get('name')
+        context={
+            "player_list":result,
+        }
+
+        return render(request,'playerMatchingCriteria.html',context)
+
+    else:
+
+        playerRankForm = PlayerRankForm(request.POST or None)
+        playerForm = PlayerForm(request.POST or None)
+        consistencyForm = ConsistencyForm(request.POST or None)
+        kickerForm = KickerForm(request.POST or None)
+        careerStatsForm = CareerStatsForm(request.POST or None)
+        seasonOffensiveStatsForm = SeasonOffensiveStatsForm(request.POST or None)
+
+
+
+
+        context={
+            "PlayerRankForm":playerRankForm,
+            "PlayerForm":playerForm,
+            "ConsistencyForm":consistencyForm,
+            "KickerForm":kickerForm,
+            "CareerStatsForm":careerStatsForm,
+            "SeasonOffensiveStatsForm":seasonOffensiveStatsForm,
+            "existence":False,
+        }
+        return render(request,'advanceSearch.html',context)
+
+
+def CareerStats(request):
+    form = CareerStatsForm(request.POST or None)
+
+    if form.is_valid():
+        ps = form.cleaned_data.get('pointScored')
+        py = form.cleaned_data.get('passYards')
+        ry = form.cleaned_data.get('rushYards')
+        recYards = form.cleaned_data.get('recYards')
+        rTD = form.cleaned_data.get('rushTDs')
+        recTDs = form.cleaned_data.get('recTDs')
+        inter = form.cleaned_data.get('interceptions')
+        f = form.cleaned_data.get('fumblesLost')
+        tp = form.cleaned_data.get('twoPtConversion')
+        passTDs = form.cleaned_data.get('passTDs')
+
+
+    cursor = connection.cursor()
+    sql = '''SELECT name
+          FROM dbdemo_Players AS p
+          Where EXISTS (
+          SELECT *
+          FROM dbdemo_CareerStats as r
+          WHERE r.pointScored > %d
+          AND r.passYards > %d
+          AND r.rushYards > %d
+          AND r.recYards > %d
+          AND r.rushTDs > %d
+          AND r.recTDs > %d
+          AND r.interceptions > %d
+          AND r.fumblesLost < %d
+          AND r.twoPtConversion > %d
+          AND r.passTDs > %d
+          AND p.id = r.pid_id)'''% (ps,py,ry,recYards,rTD,recTDs,inter,f,tp,passTDs)
+    print(sql)
+    cursor.execute(sql)
+    result = dictfetchall(cursor)
+    if result:
+        # print(result[0].get('name'))
+        # url = '/?n=%s'% result[0].get('name')
+        context={
+            "player_list":result,
+        }
+
+        return render(request,'playerMatchingCriteria.html',context)
+
+    else:
+
+        playerRankForm = PlayerRankForm(request.POST or None)
+        playerForm = PlayerForm(request.POST or None)
+        consistencyForm = ConsistencyForm(request.POST or None)
+        kickerForm = KickerForm(request.POST or None)
+        careerStatsForm = CareerStatsForm(request.POST or None)
+        seasonOffensiveStatsForm = SeasonOffensiveStatsForm(request.POST or None)
+
+
+
+
+        context={
+            "PlayerRankForm":playerRankForm,
+            "PlayerForm":playerForm,
+            "ConsistencyForm":consistencyForm,
+            "KickerForm":kickerForm,
+            "CareerStatsForm":careerStatsForm,
+            "SeasonOffensiveStatsForm":seasonOffensiveStatsForm,
+            "existence":False,
+        }
+        return render(request,'advanceSearch.html',context)
+
+
+def SeasonOffensiveStats(request):
+    form = CareerStatsForm(request.POST or None)
+
+    if form.is_valid():
+        ps = form.cleaned_data.get('pointScored')
+        py = form.cleaned_data.get('passYards')
+        ry = form.cleaned_data.get('rushYards')
+        recYards = form.cleaned_data.get('recYards')
+        rTD = form.cleaned_data.get('rushTDs')
+        recTDs = form.cleaned_data.get('recTDs')
+        inter = form.cleaned_data.get('interceptions')
+        f = form.cleaned_data.get('fumblesLost')
+        tp = form.cleaned_data.get('twoPtConversion')
+        passTDs = form.cleaned_data.get('passTDs')
+
+
+    cursor = connection.cursor()
+    sql = '''SELECT name
+          FROM dbdemo_Players AS p
+          Where EXISTS (
+          SELECT *
+          FROM dbdemo_SeasonOffensiveStats as r
+          WHERE r.pointScored > %d
+          AND r.passYards > %d
+          AND r.rushYards > %d
+          AND r.recYards > %d
+          AND r.rushTDs > %d
+          AND r.recTDs > %d
+          AND r.interceptions > %d
+          AND r.fumblesLost < %d
+          AND r.twoPtConversion > %d
+          AND r.passTDs > %d
+          AND p.id = r.pid_id)'''% (ps,py,ry,recYards,rTD,recTDs,inter,f,tp,passTDs)
+    print(sql)
+    cursor.execute(sql)
+    result = dictfetchall(cursor)
+    if result:
+        # print(result[0].get('name'))
+        # url = '/?n=%s'% result[0].get('name')
+        context={
+            "player_list":result,
+        }
+
+        return render(request,'playerMatchingCriteria.html',context)
+
+    else:
+
+        playerRankForm = PlayerRankForm(request.POST or None)
+        playerForm = PlayerForm(request.POST or None)
+        consistencyForm = ConsistencyForm(request.POST or None)
+        kickerForm = KickerForm(request.POST or None)
+        careerStatsForm = CareerStatsForm(request.POST or None)
+        seasonOffensiveStatsForm = SeasonOffensiveStatsForm(request.POST or None)
+
+
+
+
+        context={
+            "PlayerRankForm":playerRankForm,
+            "PlayerForm":playerForm,
+            "ConsistencyForm":consistencyForm,
+            "KickerForm":kickerForm,
+            "CareerStatsForm":careerStatsForm,
+            "SeasonOffensiveStatsForm":seasonOffensiveStatsForm,
+            "existence":False,
+        }
+        return render(request,'advanceSearch.html',context)

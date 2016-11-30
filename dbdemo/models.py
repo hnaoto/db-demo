@@ -29,9 +29,15 @@ class Defense(models.Model):
 
 
 class Players(models.Model):
+    POSITION_CHOICE=(
+        ('QB','Quater Back'),
+        ('RB','Running Back'),
+        ('WR','Wide Receiver'),
+        ('TE','Tight End'),
+    )
     name = models.CharField(max_length=20)
     experience = models.IntegerField(default=0)
-    position = models.CharField(max_length=2)
+    position = models.CharField(max_length=2,choices=POSITION_CHOICE)
     def __str__(self):
         return "%s" % (self.name)
 
@@ -41,11 +47,18 @@ class TeamPlayerRelation(models.Model):
     pid = models.ForeignKey(Players)
     def __str__(self):
         return "%s contract with player: %s" % (self.teamId.name,self.pid.name)
+
 class PlayerRank(models.Model):
+    POSITION_CHOICE=(
+        ('QB','Quater Back'),
+        ('RB','Running Back'),
+        ('WR','Wide Receiver'),
+        ('TE','Tight End'),
+    )
     pid = models.ForeignKey(Players)
     espnRank = models.IntegerField(default=-1)
     nflRank = models.IntegerField(default=-1)
-    sugPos = models.CharField(max_length=3)
+    sugPos = models.CharField(max_length=3,choices=POSITION_CHOICE)
     def __str__(self):
         return "%s" % (self.pid.name)
 

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player Matching Criteria</title>
+</head>
+<body>
+    {% if player_list %}
+    <table style="50%">
+        <tr>
+            <th>Name</th>
+        </tr>
+        {% for obj in player_list %}
+            <tr><td>
+            <a class="button" method="POST" href="/?n={{ obj.name }}">{{ obj.name }}</a>
+            </td></tr>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
