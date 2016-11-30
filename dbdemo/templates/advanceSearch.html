@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+
+    var existence = {{ existence|yesno:"true,false" }}
+
+    function loadTable(){
+        if(!existence){
+            alert("There is no player matching criteria, please try again")
+        }
+
+                var noShow = ['id','pid_id','name'];
+                var special = ['position','sugPos'];
+        var s = "";
+        $('#d').html(s);
+        $('#d').append('<form id = "searchTable" action="/advanceSearch/search" method="post" enctype="application/json">');
+        var s = '<input type="checkbox" name="Injury" value="True"> No Injured<br>'
+                                +'<input type="checkbox" name="Suspended" value="True"> No Suspended<br>'
+
+
+        $.getJSON('/advanceSearch/changeCriteria/',{selection: $('#s').val() },function(json){
+            objList = json['result'];
+            $.each(objList, function (i, v) {
+                var obj = objList[i];
+
+                var columnName = obj['COLUMN_NAME'];
+                if(!noShow.includes(columnName)){
+                    if(!special.includes(columnName)) {
+
+
+                                s=s+columnName+'<input type="text" name = "'+columnName+'" >'+'<select name = "compare">'+
+                                '<option value="ls"> < </option>'+'<option selected="selected" value="gt"> > </option>'
+                        +'<option value="eq"> = </option>' +'</select>'+'<br>';
+                        $('#searchTable').html(s);
+                    }
+                    else{
+                        posString = '<select name = "'+columnName+
+
+                    }
+                }
+
+
+            });
+
+
+            $('#searchTable').html(s);
+            $('#searchTable').append('<input type="submit">'+'<br>');
+
+
+        });
+
+    }
+
+
+
+
+    $(document).on('change', '#s', function() {
+        var noShow = ['id','pid_id','name'];
+        var s = "";
+        $('#d').html(s);
+        $('#d').append('<form id = "searchTable" action="/advanceSearch/search" method="post" enctype="application/json">');
+
+        $('#searchTable').append('<input type="checkbox" name="Injury" value="True"> No Injured<br>');
+        $('#searchTable').append('<input type="checkbox" name="Suspended" value="True"> No Suspended<br>');
+
+        $.getJSON('/advanceSearch/changeCriteria/',{selection: $('#s').val() },function(json){
+            objList = json['result'];
+            $.each(objList, function (i, v) {
+                var obj = objList[i];
+
+                var columnName = obj['COLUMN_NAME'];
+                if(!noShow.includes(columnName)){
+                    $('#searchTable').append(columnName);
+
+                    $('#searchTable').append( '<input type="text">' +
+                            '<select name = "compare">' +
+                            '<option value="ls"> < </option>'+
+                            '<option selected="selected" value="gt"> > </option>'+
+                            '<option value="eq"> = </option>'+
+                            '</select>'+
+                            '<br>');
+
+                }
+
+
+            });
+
+
+
+            $('#searchTable').append('<input type="submit">'+'<br>'+'</form>');
+
+
+        });
+
+
+    });
+
+
+
+
+
+
+
+
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Advance Search</title>
+</head>
+<body onload="loadTable();">
+<a class="button" href="/">Change to Name Search</a>
+<select id="s" >
+    <option value="dbdemo_Players">Player Info</option>
+    <option value="dbdemo_PlayerRank">Player Rank</option>
+    <option value="dbdemo_Kicker">Find Kicker</option>
+    <option value="dbdemo_Consistency">Player Consistency</option>
+
+    <option value="dbdemo_SeasonOffensiveStats">Player Seasonal Stats</option>
+    <option value="dbdemo_CareerStats">Player Career Statas</option>
+</select>
+<div id="d"></div>
+</body>
+</html>

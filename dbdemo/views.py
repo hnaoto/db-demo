@@ -12,6 +12,9 @@ from .models import Suspended
 from .models import CareerStats
 from .models import SeasonOffensiveStats
 from .models import TeamPlayerRelation
+from django.template import RequestContext
+import simplejson
+from django.http import HttpResponse, HttpResponseRedirect
 from django.db import connection,transaction
 
 def dictfetchall(cursor):
@@ -23,6 +26,7 @@ def dictfetchall(cursor):
         ]
 
 def index(request):
+    print('submited')
     name = request.GET.get("n")
     cursor = connection.cursor()
 
@@ -134,7 +138,7 @@ def index(request):
                           FROM dbdemo_Team AS t,dbdemo_Players AS p,dbdemo_TeamPlayerRelation AS c
                           WHERE t.id = c.teamID_id AND p.id = c.pid_id AND t.id = %s''',[teamID])
 
-    # cursor.execute('''SELECT * FROM dbdemo_TeamPlayerRelation''')
+        # cursor.execute('''SELECT * FROM dbdemo_TeamPlayerRelation''')
 
         contractSet = dictfetchall(cursor)
 
@@ -230,10 +234,33 @@ def kickerDetail(request,person_id):
 
 
 
+def advanceSearch(request):
+    context = {
+        "existence":True,
+    }
+    return render( request,'advanceSearch.html',context)
+
+
+def changeTable(request):
+    GET = request.GET
+    cursor = connection.cursor()
+    if GET.has_key(u'selection'):
+
+        selection = GET[u'selection']
 
 
 
+    cursor.execute('''SELECT COLUMN_NAME
+                      FROM INFORMATION_SCHEMA.COLUMNS
+                      WHERE TABLE_SCHEMA='fantasql'
+                      AND TABLE_NAME=%s;''',[selection])
+    columns = dictfetchall(cursor)
+    context = {'result':columns}
+    print(columns)
+    json = simplejson.dumps(context)
+    return HttpResponse(json, content_type='application/json')
 
-
-
-
+def advanceSearchAction(request):
+    received_json_data=simplejson.loads(request.body)
+    print(received_json_data)
+    return render( request,'advanceSearch.html')
