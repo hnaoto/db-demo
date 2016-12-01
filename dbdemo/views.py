@@ -363,29 +363,30 @@ def compareList(request):
 
 
 
-    context ={
-        "player_list1": playerSet1,
-        "TeamBelong_list1":teamBelong1,
-        "Injury_list1": InjurySet1,
-        "Suspended_list1": SuspendedSet1,
-        "Consistency_list1": ConsistencySet1,
-        "Season_list1": SeasonSet1,
-        "Career_list1": CareerSet1,
-        "Kicker_list1": Kicker1,
-        "Rank_list1":RankSet1,
-        "player_list2": playerSet2,
-        "TeamBelong_list2":teamBelong2,
-        "Injury_list2": InjurySet2,
-        "Suspended_list2": SuspendedSet2,
-        "Consistency_list2": ConsistencySet2,
-        "Season_list2": SeasonSet2,
-        "Career_list2": CareerSet2,
-        "Kicker_list2": Kicker2,
-        "Rank_list2":RankSet2,
+        context ={
+            "player_list1": playerSet1,
+            "TeamBelong_list1":teamBelong1,
+            "Injury_list1": InjurySet1,
+            "Suspended_list1": SuspendedSet1,
+            "Consistency_list1": ConsistencySet1,
+            "Season_list1": SeasonSet1,
+            "Career_list1": CareerSet1,
+            "Kicker_list1": Kicker1,
+            "Rank_list1":RankSet1,
+            "player_list2": playerSet2,
+            "TeamBelong_list2":teamBelong2,
+            "Injury_list2": InjurySet2,
+            "Suspended_list2": SuspendedSet2,
+            "Consistency_list2": ConsistencySet2,
+            "Season_list2": SeasonSet2,
+            "Career_list2": CareerSet2,
+            "Kicker_list2": Kicker2,
+            "Rank_list2":RankSet2,
 
-    }
-    return render(request,'compare.html', context)
-
+        }
+        return render(request,'compare.html', context)
+    else:
+        return render(request,'compare.html')
 
 def injuryDetail(request,person_id):
     cursor = connection.cursor()
