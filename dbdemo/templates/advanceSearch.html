@@ -46,26 +46,26 @@
 {{ PlayerForm }}
 <input type="submit" value="search">
 </form>
-<br>
+
 
 
 <form style="display:none" id='PlayerRank' action='/advanceSearch/PlayerRank/' method='POST'>{% csrf_token %}
 {{ PlayerRankForm }}
 <input type="submit" value="search">
 </form>
-<br>
+
 
 <form style="display:none" id="Consistency" action='/advanceSearch/Consistency/' method='POST'>{% csrf_token %}
 {{ ConsistencyForm }}
 <input type="submit" value="search">
 </form>
-<br>
+
 
 <form style="display:none" id='Kicker' action='/advanceSearch/Kicker/' method='POST'>{% csrf_token %}
 {{ KickerForm }}
 <input type="submit" value="search">
 </form>
-<br>
+
 
 {#<form action='/advanceSearch/CareerStats/' method='POST'>{% csrf_token %}#}
 {#{{ CareerStatsForm }}#}
@@ -79,7 +79,7 @@
 <input type="submit" value="search">
 </form>
 </dive>
-<br>
+
 
 
 
