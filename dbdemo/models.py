@@ -29,17 +29,17 @@ class Defense(models.Model):
 
 
 class Players(models.Model):
-    POSITION_CHOICE=(
-        ('QB','Quater Back'),
-        ('RB','Running Back'),
-        ('WR','Wide Receiver'),
-        ('TE','Tight End'),
-        ('KI','Kicker'),
-        ('DE','Defense'),
-    )
+    # POSITION_CHOICE=(
+    #     ('QB','Quater Back'),
+    #     ('RB','Running Back'),
+    #     ('WR','Wide Receiver'),
+    #     ('TE','Tight End'),
+    #     ('KI','Kicker'),
+    #     ('DE','Defense'),
+    # )
     name = models.CharField(max_length=20)
     experience = models.IntegerField(default=0)
-    position = models.CharField(max_length=2,choices=POSITION_CHOICE)
+    position = models.CharField(max_length=3)
     def __str__(self):
         return "%s" % (self.name)
 
@@ -51,18 +51,18 @@ class TeamPlayerRelation(models.Model):
         return "%s contract with player: %s" % (self.teamId.name,self.pid.name)
 
 class PlayerRank(models.Model):
-    POSITION_CHOICE=(
-        ('QB','Quater Back'),
-        ('RB','Running Back'),
-        ('WR','Wide Receiver'),
-        ('TE','Tight End'),
-        ('KI','Kicker'),
-        ('DE','Defense'),
-    )
+    # POSITION_CHOICE=(
+    #     ('QB','Quater Back'),
+    #     ('RB','Running Back'),
+    #     ('WR','Wide Receiver'),
+    #     ('TE','Tight End'),
+    #     ('KI','Kicker'),
+    #     ('DE','Defense'),
+    # )
     pid = models.ForeignKey(Players)
     espnRank = models.IntegerField(default=-1)
     nflRank = models.IntegerField(default=-1)
-    sugPos = models.CharField(max_length=3,choices=POSITION_CHOICE)
+    sugPos = models.CharField(max_length=3)
     def __str__(self):
         return "%s" % (self.pid.name)
 
