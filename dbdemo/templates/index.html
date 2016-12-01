@@ -37,16 +37,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Fantasql</title>
+        {% load staticfiles %}    
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"  >
 </head>
 
 <body>
-<a class="button" href="/advanceSearch/">Change to Advance People Search</a>
-<a class="button" href="/compareList/">Compare List</a>
 
 
-<form>
+
+<section id="main">
+
+
+
+  <button type="button"> <a href="/advanceSearch/">Advance Search</a></button>
+  <button type="button" class="orange"><a href="/compareList/">Compare List</a></button>
+
+  
+  
+  <!--
+  <a class="button" href="/advanceSearch/">Change to Advance People Search</a>
+  <a class="button" href="/compareList/">Compare List</a>
+  -->
+<form> 
     <input style = "width:50%" type="text" name = "n" placeholder="Search by name(Team or Player)" value='{{ request.GET.n }}'/>
-    <input type="submit" value="search"/>
+   
 
 </form>
 
@@ -78,6 +92,8 @@
 
 
                 <td>{{ obj.experience }}</td><td>{{ obj.position }}</td>
+                
+                        
                 {% if Injury_list %}
                     <td>
 
@@ -248,7 +264,7 @@
 
 {% endif %}
 
-
+</section>
 
 
 </body>

@@ -17,5 +17,7 @@ urlpatterns = [
     url(r'^advanceSearch/Kicker/$',views.Kicker,name='Kicker'),
     url(r'^advanceSearch/CareerStats/$',views.CareerStats,name='CareerStats'),
     url(r'^advanceSearch/SeasonOffensiveStats/$',views.SeasonOffensiveStats,name='SeasonOffensiveStats'),
+    
+    url(r'^players/$',views.players_show),
 ]
 

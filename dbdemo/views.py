@@ -848,3 +848,12 @@ def SeasonOffensiveStats(request):
             "existence":False,
         }
         return render(request,'advanceSearch.html',context)
+      
+      
+      
+      
+              
+def players_show(request):
+  
+  
+  return render(request,'players.html',{})
