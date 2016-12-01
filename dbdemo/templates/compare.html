@@ -36,12 +36,16 @@
     </script>
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>Compare Lists</title>
     {% load staticfiles %}  
+=======
+    <title>Fantasql</title>{% load staticfiles %}    
+>>>>>>> 71775934f32c227faaa8a3562e14fb89babfccf5
     <link rel="stylesheet" href="{% static 'css/index.css' %}"  >
 </head>
 
-<body>
+<body style="background-color: black; color: white;">
 
 <button class="orange">      <a class="button" href="/">Back to Search</a> </button>
 
@@ -50,7 +54,7 @@
 
 {% if player_list1 %}
 
-    <table style="50%">
+    <table style="border: 2px solid white; margin-top: 15px;">
         <tr>
             <th>Name</th> <th>Team</th> <th>Experience</th> <th>Position</th><th>Injury</th>
             <th>Suspended</th><th>Kicker</th>
@@ -111,7 +115,7 @@
     </table>
 
     {% for d in Rank_list1 %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr>
                 <th></th>
                 {% for key,values in d.items %}
@@ -135,7 +139,7 @@
 
 
     {% for d in Consistency_list1 %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr><th></th>
                 {% for key,values in d.items %}
 
@@ -157,7 +161,7 @@
 
 
     {% for d in Season_list1 %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr><th></th>
                 {% for key,values in d.items %}
 
@@ -178,7 +182,7 @@
     {% endfor %}
 
     {% for d in Career_list1 %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr><th></th>
                 {% for key,values in d.items %}
 
@@ -201,10 +205,16 @@
 
 {% endif %}
 
+<br>
+<br>
+<hr style="border-color: red;">
+<br>
+<br>
+
 
 {% if player_list2 %}
 
-    <table style="50%">
+    <table style="border: 2px solid white; margin-top: 15px;">
         <tr>
             <th>Name</th> <th>Team</th> <th>Experience</th> <th>Position</th><th>Injury</th>
             <th>Suspended</th><th>Kicker</th>
@@ -265,7 +275,7 @@
     </table>
 
     {% for d in Rank_list2 %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr>
                 <th></th>
                 {% for key,values in d.items %}
@@ -289,7 +299,7 @@
 
 
     {% for d in Consistency_list2 %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr><th></th>
                 {% for key,values in d.items %}
 
@@ -311,7 +321,7 @@
 
 
     {% for d in Season_list2 %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr><th></th>
                 {% for key,values in d.items %}
 
@@ -332,7 +342,7 @@
     {% endfor %}
 
     {% for d in Career_list2 %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr><th></th>
                 {% for key,values in d.items %}
 
