@@ -144,7 +144,7 @@ def index(request):
         contractSet = dictfetchall(cursor)
 
         cursor.execute('''SELECT *
-                          FROM dbdemo_Defense AS i,dbdemo_team AS p
+                          FROM dbdemo_defense AS i,dbdemo_team AS p
                           WHERE p.id = i.teamID_id AND p.id = %s''',[teamID])
 
         defenseSet = dictfetchall(cursor)
@@ -508,7 +508,7 @@ def Player(request):
     cursor = connection.cursor()
     sql = '''SELECT name
           FROM dbdemo_players AS p
-          Where p.experience > %d
+          Where p.experience >= %d
           AND p.position = "%s"'''% (int(exp),position)
     cursor.execute(sql)
     result = dictfetchall(cursor)
@@ -560,8 +560,8 @@ def PlayerRank(request):
           SELECT *
           FROM dbdemo_playerrank as r
           WHERE r.sugPos = "%s"
-          AND r.espnRank < %d
-          AND r.nflRank < %d
+          AND r.espnRank <= %d
+          AND r.nflRank <= %d
           AND p.id = r.pid_id)'''% (pos,espn,nfl)
     print(sql)
     cursor.execute(sql)
@@ -616,10 +616,10 @@ def Consistency(request):
           Where EXISTS (
           SELECT *
           FROM dbdemo_consistency as r
-          WHERE r.score > %d
-          AND r.eliteScore > %d
-          AND r.topScore > %d
-          AND r.subparScore > %d
+          WHERE r.score >= %d
+          AND r.eliteScore >= %d
+          AND r.topScore >= %d
+          AND r.subparScore >= %d
           AND p.id = r.pid_id)'''% (score,elite,top,subpar)
     print(sql)
     cursor.execute(sql)
@@ -673,10 +673,10 @@ def Kicker(request):
           Where EXISTS (
           SELECT *
           FROM dbdemo_kicker as r
-          WHERE r.fg > %d
-          AND r.fga > %d
-          AND r.xpa > %d
-          AND r.xp > %d
+          WHERE r.fg >= %d
+          AND r.fga >= %d
+          AND r.xpa >= %d
+          AND r.xp >= %d
           AND p.id = r.pid_id)'''% (fd,fga,xpa,xp)
     print(sql)
     cursor.execute(sql)

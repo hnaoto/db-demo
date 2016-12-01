@@ -41,10 +41,6 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 
 
@@ -180,10 +176,41 @@ button:hover {
   filter: brightness(100%);
 }
 
+
 td, th {
 	padding-right: 10px;
 }
 
-table { border: none; border-collapse: collapse; }
-table td, table th { border-left: 2px solid white; }
-table td:first-child, table th:first-child { border-left: none; }
+		
+
+		
+td, tr {
+
+    padding: 1em !important;
+  
+}
+
+tr {
+  border-bottom: 2px solid #211f4b;
+  
+  
+}
+tr:nth-child(even) {
+    background-color: #141436;
+}
+
+
+tr:first-child {
+  border-bottom: 2px solid #400f9b;
+  
+  
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    background: #120a1d;
+	
+}
+	
+>>>>>>> b42860ba7283c042cc8f7b3b39fabaecc4adf286
