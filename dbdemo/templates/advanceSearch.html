@@ -45,12 +45,12 @@
 </form>
 <br>
 
-<form action='/advanceSearch/CareerStats/' method='POST'>{% csrf_token %}
-{{ CareerStatsForm }}
-<input type="submit" value="search">
-</form>
-<br>
-
+{#<form action='/advanceSearch/CareerStats/' method='POST'>{% csrf_token %}#}
+{#{{ CareerStatsForm }}#}
+{#<input type="submit" value="search">#}
+{#</form>#}
+{#<br>#}
+<select><option>Seasonal Stats</option><option>Career Stats</option></select>
 <form action='/advanceSearch/SeasonOffensiveStats/' method='POST'>{% csrf_token %}
 {{ SeasonOffensiveStatsForm }}
 <input type="submit" value="search">

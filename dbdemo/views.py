@@ -805,16 +805,16 @@ def SeasonOffensiveStats(request):
           Where EXISTS (
           SELECT *
           FROM dbdemo_seasonoffensivestats as r
-          WHERE r.pointScored > %d
-          AND r.passYards > %d
-          AND r.rushYards > %d
-          AND r.recYards > %d
-          AND r.rushTDs > %d
-          AND r.recTDs > %d
-          AND r.interceptions < %d
-          AND r.fumblesLost < %d
-          AND r.twoPtConversion > %d
-          AND r.passTDs > %d
+          WHERE r.pointScored >= %d
+          AND r.passYards >= %d
+          AND r.rushYards >= %d
+          AND r.recYards >= %d
+          AND r.rushTDs >= %d
+          AND r.recTDs >= %d
+          AND r.interceptions <= %d
+          AND r.fumblesLost <= %d
+          AND r.twoPtConversion >= %d
+          AND r.passTDs >= %d
           AND p.id = r.pid_id)'''% (ps,py,ry,recYards,rTD,recTDs,inter,f,tp,passTDs)
     print(sql)
     cursor.execute(sql)
