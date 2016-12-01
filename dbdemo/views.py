@@ -191,6 +191,7 @@ def compareList(request):
     teamBelong2 = {}
 
     if name:
+        name = name.replace("%20"," ")
         cursor = connection.cursor()
 
         cursor.execute('''SELECT * FROM dbdemo_players WHERE name =%s''',[name])
@@ -275,6 +276,7 @@ def compareList(request):
 
 
         name = request.COOKIES.get('pTwo')
+        name = name.replace("%20"," ")
         if name:
                     cursor.execute('''SELECT * FROM dbdemo_players WHERE name =%s''',[name])
 

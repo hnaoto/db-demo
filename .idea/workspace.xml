@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48602764-1a1d-45d8-a083-ff039983c16c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbdemo/templates/compare.html" afterPath="$PROJECT_DIR$/dbdemo/templates/compare.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbdemo/views.py" afterPath="$PROJECT_DIR$/dbdemo/views.py" />
     </list>
     <ignored path="db-demo.iws" />
@@ -28,96 +28,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbdemo/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dbdemo/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18103448">
-              <caret line="368" column="39" selection-start-line="368" selection-start-column="39" selection-end-line="368" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.22413793">
+              <caret line="278" column="38" selection-start-line="278" selection-start-column="38" selection-end-line="278" selection-end-column="38" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1480558097000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
-                <marker date="1480558097000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
-                <marker date="1480558097000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
-                <marker date="1480558097000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
-                <marker date="1480558097000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
-                <marker date="1480558097000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
-                <marker date="1480558097000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
-                <marker date="1480558097000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-                <marker date="1480558097000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
-                <marker date="1480558097000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
-                <marker date="1480558097000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
-                <marker date="1480558097000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
-                <marker date="1480558097000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
-                <marker date="1480558097000" expanded="true" signature="5737:5780" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="5935:6148" placeholder="SELECT t.nam... dbdemo_team" />
-                <marker date="1480558097000" expanded="true" signature="6244:6477" placeholder="SELECT * FRO... dbdemo_injury" />
-                <marker date="1480558097000" expanded="true" signature="6359:6473" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="6570:6806" placeholder="SELECT * FRO... dbdemo_suspended" />
-                <marker date="1480558097000" expanded="true" signature="6688:6802" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="6902:7179" placeholder="SELECT * FRO... dbdemo_playerrank" />
-                <marker date="1480558097000" expanded="true" signature="7045:7175" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="7272:7510" placeholder="SELECT * FRO... dbdemo_consistency" />
-                <marker date="1480558097000" expanded="true" signature="7392:7506" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="7610:7817" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-                <marker date="1480558097000" expanded="true" signature="7715:7813" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="7912:8150" placeholder="SELECT * FRO... dbdemo_careerstats" />
-                <marker date="1480558097000" expanded="true" signature="8032:8146" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="8245:8438" placeholder="SELECT * FRO... dbdemo_kicker" />
-                <marker date="1480558097000" expanded="true" signature="8336:8434" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="8598:8641" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="8796:9009" placeholder="SELECT t.nam... dbdemo_team" />
-                <marker date="1480558097000" expanded="true" signature="9105:9338" placeholder="SELECT * FRO... dbdemo_injury" />
-                <marker date="1480558097000" expanded="true" signature="9220:9334" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="9431:9667" placeholder="SELECT * FRO... dbdemo_suspended" />
-                <marker date="1480558097000" expanded="true" signature="9549:9663" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="9763:10040" placeholder="SELECT * FRO... dbdemo_playerrank" />
-                <marker date="1480558097000" expanded="true" signature="9906:10036" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="10133:10371" placeholder="SELECT * FRO... dbdemo_consistency" />
-                <marker date="1480558097000" expanded="true" signature="10253:10367" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="10471:10678" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-                <marker date="1480558097000" expanded="true" signature="10576:10674" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="10773:11011" placeholder="SELECT * FRO... dbdemo_careerstats" />
-                <marker date="1480558097000" expanded="true" signature="10893:11007" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="11106:11299" placeholder="SELECT * FRO... dbdemo_kicker" />
-                <marker date="1480558097000" expanded="true" signature="11197:11295" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="12367:12540" placeholder="SELECT * FRO... dbdemo_injury" />
-                <marker date="1480558097000" expanded="true" signature="12446:12536" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="12616:12710" placeholder="SELECT name dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="13015:13191" placeholder="SELECT * FRO... dbdemo_suspended" />
-                <marker date="1480558097000" expanded="true" signature="13097:13187" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="13268:13362" placeholder="SELECT name dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="13669:13842" placeholder="SELECT * FRO... dbdemo_kicker" />
-                <marker date="1480558097000" expanded="true" signature="13748:13838" placeholder="SELECT * FRO... dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="13918:14012" placeholder="SELECT name dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="15661:15773" placeholder="SELECT name dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="17172:17422" placeholder="SELECT name dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="17254:17421" placeholder="SELECT * FRO... dbdemo_playerrank" />
-                <marker date="1480558097000" expanded="true" signature="18894:19178" placeholder="SELECT name dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="18976:19177" placeholder="SELECT * FRO... dbdemo_consistency" />
-                <marker date="1480558097000" expanded="true" signature="20616:20871" placeholder="SELECT name dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="20698:20870" placeholder="SELECT * FRO... dbdemo_kicker" />
-                <marker date="1480558097000" expanded="true" signature="22646:23124" placeholder="SELECT name dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="22728:23123" placeholder="SELECT * FRO... dbdemo_careerstats" />
-                <marker date="1480558097000" expanded="true" signature="24942:25429" placeholder="SELECT name dbdemo_players" />
-                <marker date="1480558097000" expanded="true" signature="25071:25428" placeholder="SELECT * FRO... dbdemo_CareerStats" />
-                <marker date="1480558097000" expanded="true" signature="25071:25429" placeholder="SELECT name dbdemo_Players" />
+                <marker date="1480563644000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
+                <marker date="1480563644000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
+                <marker date="1480563644000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
+                <marker date="1480563644000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
+                <marker date="1480563644000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
+                <marker date="1480563644000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
+                <marker date="1480563644000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
+                <marker date="1480563644000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+                <marker date="1480563644000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
+                <marker date="1480563644000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
+                <marker date="1480563644000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
+                <marker date="1480563644000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
+                <marker date="1480563644000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
+                <marker date="1480563644000" expanded="true" signature="5776:5819" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="5974:6187" placeholder="SELECT t.nam... dbdemo_team" />
+                <marker date="1480563644000" expanded="true" signature="6283:6516" placeholder="SELECT * FRO... dbdemo_injury" />
+                <marker date="1480563644000" expanded="true" signature="6398:6512" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="6609:6845" placeholder="SELECT * FRO... dbdemo_suspended" />
+                <marker date="1480563644000" expanded="true" signature="6727:6841" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="6941:7218" placeholder="SELECT * FRO... dbdemo_playerrank" />
+                <marker date="1480563644000" expanded="true" signature="7084:7214" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="7311:7549" placeholder="SELECT * FRO... dbdemo_consistency" />
+                <marker date="1480563644000" expanded="true" signature="7431:7545" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="7649:7856" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+                <marker date="1480563644000" expanded="true" signature="7754:7852" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="7951:8189" placeholder="SELECT * FRO... dbdemo_careerstats" />
+                <marker date="1480563644000" expanded="true" signature="8071:8185" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="8284:8477" placeholder="SELECT * FRO... dbdemo_kicker" />
+                <marker date="1480563644000" expanded="true" signature="8375:8473" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="8676:8719" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="8874:9087" placeholder="SELECT t.nam... dbdemo_team" />
+                <marker date="1480563644000" expanded="true" signature="9183:9416" placeholder="SELECT * FRO... dbdemo_injury" />
+                <marker date="1480563644000" expanded="true" signature="9298:9412" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="9509:9745" placeholder="SELECT * FRO... dbdemo_suspended" />
+                <marker date="1480563644000" expanded="true" signature="9627:9741" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="9841:10118" placeholder="SELECT * FRO... dbdemo_playerrank" />
+                <marker date="1480563644000" expanded="true" signature="9984:10114" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="10211:10449" placeholder="SELECT * FRO... dbdemo_consistency" />
+                <marker date="1480563644000" expanded="true" signature="10331:10445" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="10549:10756" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+                <marker date="1480563644000" expanded="true" signature="10654:10752" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="10851:11089" placeholder="SELECT * FRO... dbdemo_careerstats" />
+                <marker date="1480563644000" expanded="true" signature="10971:11085" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="11184:11377" placeholder="SELECT * FRO... dbdemo_kicker" />
+                <marker date="1480563644000" expanded="true" signature="11275:11373" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="12445:12618" placeholder="SELECT * FRO... dbdemo_injury" />
+                <marker date="1480563644000" expanded="true" signature="12524:12614" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="12694:12788" placeholder="SELECT name dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="13093:13269" placeholder="SELECT * FRO... dbdemo_suspended" />
+                <marker date="1480563644000" expanded="true" signature="13175:13265" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="13346:13440" placeholder="SELECT name dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="13747:13920" placeholder="SELECT * FRO... dbdemo_kicker" />
+                <marker date="1480563644000" expanded="true" signature="13826:13916" placeholder="SELECT * FRO... dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="13996:14090" placeholder="SELECT name dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="15739:15851" placeholder="SELECT name dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="17250:17500" placeholder="SELECT name dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="17332:17499" placeholder="SELECT * FRO... dbdemo_playerrank" />
+                <marker date="1480563644000" expanded="true" signature="18972:19256" placeholder="SELECT name dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="19054:19255" placeholder="SELECT * FRO... dbdemo_consistency" />
+                <marker date="1480563644000" expanded="true" signature="20694:20949" placeholder="SELECT name dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="20776:20948" placeholder="SELECT * FRO... dbdemo_kicker" />
+                <marker date="1480563644000" expanded="true" signature="22724:23202" placeholder="SELECT name dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="22806:23201" placeholder="SELECT * FRO... dbdemo_careerstats" />
+                <marker date="1480563644000" expanded="true" signature="25020:25507" placeholder="SELECT name dbdemo_players" />
+                <marker date="1480563644000" expanded="true" signature="25102:25506" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
               </folding>
             </state>
           </provider>
@@ -127,8 +116,11 @@
         <entry file="file://$PROJECT_DIR$/fantasql/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="98" column="23" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="23" />
-              <folding />
+              <caret line="119" column="0" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="23" />
+              <folding>
+                <marker date="1480563139000" expanded="true" signature="0:307" placeholder="&quot;&quot;&quot;Django settings for fantasql project....&quot;&quot;&quot;" />
+                <marker date="1480563139000" expanded="true" signature="1669:1772" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,7 +128,7 @@
       <file leaf-file-name="compare.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbdemo/templates/compare.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-208.125">
+            <state vertical-scroll-proportion="-220.0">
               <caret line="352" column="39" selection-start-line="352" selection-start-column="39" selection-end-line="352" selection-end-column="39" />
               <folding />
             </state>
@@ -146,8 +138,28 @@
       <file leaf-file-name="playerMatchingCriteria.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbdemo/templates/playerMatchingCriteria.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-10.0">
               <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kickerDetail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbdemo/templates/kickerDetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.5416667">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="injuryDetail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbdemo/templates/injuryDetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.9166667">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -156,28 +168,8 @@
       <file leaf-file-name="suspendedDetail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbdemo/templates/suspendedDetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-3.7916667">
               <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbdemo/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DHTML.js" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1740" column="2" selection-start-line="1740" selection-start-column="2" selection-end-line="1740" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -186,9 +178,21 @@
       <file leaf-file-name="advanceSearch.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbdemo/templates/advanceSearch.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="11" selection-end-column="13" />
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbdemo/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <folding>
+                <marker date="1480563139000" expanded="true" signature="6226:6235" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,9 +201,9 @@
         <entry file="file://$PROJECT_DIR$/dbdemo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+              <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#53#85#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -667,12 +671,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/dbdemo/views.py</url>
-          <line>657</line>
+          <line>653</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/dbdemo/views.py</url>
-          <line>319</line>
+          <line>316</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
@@ -701,7 +705,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#53#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -727,79 +731,78 @@
           <caret line="250" column="9" selection-start-line="250" selection-start-column="9" selection-end-line="250" selection-end-column="9" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1480558097000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
-            <marker date="1480558097000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
-            <marker date="1480558097000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
-            <marker date="1480558097000" expanded="true" signature="5737:5780" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="5935:6148" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="6244:6477" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="6359:6473" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6570:6806" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="6688:6802" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6902:7179" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="7045:7175" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7272:7510" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="7392:7506" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7610:7817" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="7715:7813" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7912:8150" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="8032:8146" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8245:8438" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="8336:8434" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8598:8641" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8796:9009" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="9105:9338" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="9220:9334" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9431:9667" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="9549:9663" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9763:10040" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="9906:10036" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10133:10371" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="10253:10367" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10471:10678" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="10576:10674" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10773:11011" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="10893:11007" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="11106:11299" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="11197:11295" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12367:12540" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="12446:12536" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12616:12710" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13015:13191" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="13097:13187" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13268:13362" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13669:13842" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="13748:13838" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13918:14012" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="15661:15773" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17172:17422" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17254:17421" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="18894:19178" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="18976:19177" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="20616:20871" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="20698:20870" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="22646:23124" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="22728:23123" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="24942:25429" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="25071:25428" placeholder="SELECT * FRO... dbdemo_CareerStats" />
-            <marker date="1480558097000" expanded="true" signature="25071:25429" placeholder="SELECT name dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
+            <marker date="1480563644000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
+            <marker date="1480563644000" expanded="true" signature="5776:5819" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="5974:6187" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="6283:6516" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="6398:6512" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6609:6845" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="6727:6841" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6941:7218" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="7084:7214" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7311:7549" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="7431:7545" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7649:7856" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="7754:7852" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7951:8189" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="8071:8185" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8284:8477" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="8375:8473" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8676:8719" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8874:9087" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="9183:9416" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="9298:9412" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9509:9745" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="9627:9741" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9841:10118" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="9984:10114" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10211:10449" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="10331:10445" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10549:10756" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="10654:10752" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10851:11089" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="10971:11085" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="11184:11377" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="11275:11373" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12445:12618" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="12524:12614" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12694:12788" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13093:13269" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="13175:13265" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13346:13440" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13747:13920" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="13826:13916" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13996:14090" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="15739:15851" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17250:17500" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17332:17499" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="18972:19256" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="19054:19255" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="20694:20949" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="20776:20948" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="22724:23202" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="22806:23201" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="25020:25507" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="25102:25506" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
           </folding>
         </state>
       </provider>
@@ -830,7 +833,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1480563139000" expanded="true" signature="6226:6235" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -847,7 +852,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="40" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#53#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -888,79 +893,78 @@
           <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1480558097000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
-            <marker date="1480558097000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
-            <marker date="1480558097000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
-            <marker date="1480558097000" expanded="true" signature="5737:5780" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="5935:6148" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="6244:6477" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="6359:6473" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6570:6806" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="6688:6802" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6902:7179" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="7045:7175" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7272:7510" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="7392:7506" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7610:7817" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="7715:7813" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7912:8150" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="8032:8146" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8245:8438" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="8336:8434" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8598:8641" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8796:9009" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="9105:9338" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="9220:9334" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9431:9667" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="9549:9663" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9763:10040" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="9906:10036" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10133:10371" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="10253:10367" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10471:10678" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="10576:10674" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10773:11011" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="10893:11007" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="11106:11299" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="11197:11295" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12367:12540" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="12446:12536" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12616:12710" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13015:13191" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="13097:13187" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13268:13362" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13669:13842" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="13748:13838" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13918:14012" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="15661:15773" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17172:17422" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17254:17421" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="18894:19178" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="18976:19177" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="20616:20871" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="20698:20870" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="22646:23124" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="22728:23123" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="24942:25429" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="25071:25428" placeholder="SELECT * FRO... dbdemo_CareerStats" />
-            <marker date="1480558097000" expanded="true" signature="25071:25429" placeholder="SELECT name dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
+            <marker date="1480563644000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
+            <marker date="1480563644000" expanded="true" signature="5776:5819" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="5974:6187" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="6283:6516" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="6398:6512" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6609:6845" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="6727:6841" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6941:7218" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="7084:7214" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7311:7549" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="7431:7545" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7649:7856" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="7754:7852" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7951:8189" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="8071:8185" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8284:8477" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="8375:8473" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8676:8719" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8874:9087" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="9183:9416" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="9298:9412" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9509:9745" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="9627:9741" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9841:10118" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="9984:10114" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10211:10449" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="10331:10445" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10549:10756" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="10654:10752" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10851:11089" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="10971:11085" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="11184:11377" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="11275:11373" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12445:12618" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="12524:12614" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12694:12788" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13093:13269" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="13175:13265" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13346:13440" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13747:13920" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="13826:13916" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13996:14090" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="15739:15851" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17250:17500" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17332:17499" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="18972:19256" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="19054:19255" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="20694:20949" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="20776:20948" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="22724:23202" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="22806:23201" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="25020:25507" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="25102:25506" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
           </folding>
         </state>
       </provider>
@@ -991,7 +995,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1480563139000" expanded="true" signature="6226:6235" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,7 +1006,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#53#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1048,79 +1054,78 @@
           <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1480558097000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
-            <marker date="1480558097000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
-            <marker date="1480558097000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
-            <marker date="1480558097000" expanded="true" signature="5737:5780" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="5935:6148" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="6244:6477" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="6359:6473" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6570:6806" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="6688:6802" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6902:7179" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="7045:7175" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7272:7510" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="7392:7506" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7610:7817" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="7715:7813" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7912:8150" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="8032:8146" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8245:8438" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="8336:8434" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8598:8641" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8796:9009" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="9105:9338" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="9220:9334" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9431:9667" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="9549:9663" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9763:10040" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="9906:10036" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10133:10371" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="10253:10367" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10471:10678" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="10576:10674" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10773:11011" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="10893:11007" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="11106:11299" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="11197:11295" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12367:12540" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="12446:12536" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12616:12710" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13015:13191" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="13097:13187" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13268:13362" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13669:13842" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="13748:13838" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13918:14012" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="15661:15773" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17172:17422" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17254:17421" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="18894:19178" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="18976:19177" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="20616:20871" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="20698:20870" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="22646:23124" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="22728:23123" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="24942:25429" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="25071:25428" placeholder="SELECT * FRO... dbdemo_CareerStats" />
-            <marker date="1480558097000" expanded="true" signature="25071:25429" placeholder="SELECT name dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
+            <marker date="1480563644000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
+            <marker date="1480563644000" expanded="true" signature="5776:5819" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="5974:6187" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="6283:6516" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="6398:6512" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6609:6845" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="6727:6841" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6941:7218" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="7084:7214" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7311:7549" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="7431:7545" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7649:7856" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="7754:7852" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7951:8189" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="8071:8185" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8284:8477" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="8375:8473" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8676:8719" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8874:9087" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="9183:9416" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="9298:9412" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9509:9745" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="9627:9741" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9841:10118" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="9984:10114" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10211:10449" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="10331:10445" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10549:10756" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="10654:10752" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10851:11089" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="10971:11085" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="11184:11377" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="11275:11373" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12445:12618" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="12524:12614" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12694:12788" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13093:13269" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="13175:13265" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13346:13440" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13747:13920" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="13826:13916" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13996:14090" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="15739:15851" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17250:17500" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17332:17499" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="18972:19256" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="19054:19255" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="20694:20949" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="20776:20948" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="22724:23202" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="22806:23201" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="25020:25507" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="25102:25506" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
           </folding>
         </state>
       </provider>
@@ -1129,7 +1134,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1480563139000" expanded="true" signature="6226:6235" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1161,79 +1168,78 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1480558097000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
-            <marker date="1480558097000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
-            <marker date="1480558097000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
-            <marker date="1480558097000" expanded="true" signature="5737:5780" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="5935:6148" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="6244:6477" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="6359:6473" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6570:6806" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="6688:6802" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6902:7179" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="7045:7175" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7272:7510" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="7392:7506" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7610:7817" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="7715:7813" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7912:8150" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="8032:8146" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8245:8438" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="8336:8434" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8598:8641" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8796:9009" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="9105:9338" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="9220:9334" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9431:9667" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="9549:9663" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9763:10040" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="9906:10036" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10133:10371" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="10253:10367" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10471:10678" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="10576:10674" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10773:11011" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="10893:11007" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="11106:11299" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="11197:11295" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12367:12540" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="12446:12536" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12616:12710" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13015:13191" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="13097:13187" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13268:13362" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13669:13842" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="13748:13838" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13918:14012" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="15661:15773" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17172:17422" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17254:17421" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="18894:19178" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="18976:19177" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="20616:20871" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="20698:20870" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="22646:23124" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="22728:23123" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="24942:25429" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="25071:25428" placeholder="SELECT * FRO... dbdemo_CareerStats" />
-            <marker date="1480558097000" expanded="true" signature="25071:25429" placeholder="SELECT name dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
+            <marker date="1480563644000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
+            <marker date="1480563644000" expanded="true" signature="5776:5819" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="5974:6187" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="6283:6516" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="6398:6512" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6609:6845" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="6727:6841" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6941:7218" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="7084:7214" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7311:7549" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="7431:7545" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7649:7856" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="7754:7852" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7951:8189" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="8071:8185" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8284:8477" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="8375:8473" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8676:8719" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8874:9087" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="9183:9416" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="9298:9412" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9509:9745" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="9627:9741" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9841:10118" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="9984:10114" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10211:10449" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="10331:10445" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10549:10756" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="10654:10752" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10851:11089" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="10971:11085" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="11184:11377" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="11275:11373" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12445:12618" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="12524:12614" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12694:12788" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13093:13269" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="13175:13265" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13346:13440" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13747:13920" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="13826:13916" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13996:14090" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="15739:15851" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17250:17500" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17332:17499" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="18972:19256" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="19054:19255" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="20694:20949" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="20776:20948" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="22724:23202" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="22806:23201" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="25020:25507" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="25102:25506" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
           </folding>
         </state>
       </provider>
@@ -1275,20 +1281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbdemo/templates/kickerDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbdemo/templates/injuryDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dbdemo/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1296,52 +1288,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbdemo/templates/playerMatchingCriteria.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbdemo/templates/suspendedDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbdemo/templates/advanceSearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1740" column="2" selection-start-line="1740" selection-start-column="2" selection-end-line="1740" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbdemo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbdemo/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1357,98 +1307,160 @@
     <entry file="file://$PROJECT_DIR$/fantasql/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="23" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="23" />
+          <caret line="119" column="0" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="23" />
+          <folding>
+            <marker date="1480563139000" expanded="true" signature="0:307" placeholder="&quot;&quot;&quot;Django settings for fantasql project....&quot;&quot;&quot;" />
+            <marker date="1480563139000" expanded="true" signature="1669:1772" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbdemo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+          <folding>
+            <element signature="e#53#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbdemo/templates/suspendedDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7916667">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbdemo/templates/playerMatchingCriteria.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbdemo/templates/kickerDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5416667">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbdemo/templates/injuryDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9166667">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbdemo/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <marker date="1480563139000" expanded="true" signature="6226:6235" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbdemo/templates/compare.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-208.125">
+        <state vertical-scroll-proportion="-220.0">
           <caret line="352" column="39" selection-start-line="352" selection-start-column="39" selection-end-line="352" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbdemo/templates/advanceSearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbdemo/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18103448">
-          <caret line="368" column="39" selection-start-line="368" selection-start-column="39" selection-end-line="368" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.22413793">
+          <caret line="278" column="38" selection-start-line="278" selection-start-column="38" selection-end-line="278" selection-end-column="38" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1480558097000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
-            <marker date="1480558097000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
-            <marker date="1480558097000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
-            <marker date="1480558097000" expanded="true" signature="5737:5780" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="5935:6148" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="6244:6477" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="6359:6473" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6570:6806" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="6688:6802" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="6902:7179" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="7045:7175" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7272:7510" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="7392:7506" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7610:7817" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="7715:7813" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="7912:8150" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="8032:8146" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8245:8438" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="8336:8434" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8598:8641" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="8796:9009" placeholder="SELECT t.nam... dbdemo_team" />
-            <marker date="1480558097000" expanded="true" signature="9105:9338" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="9220:9334" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9431:9667" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="9549:9663" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="9763:10040" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="9906:10036" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10133:10371" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="10253:10367" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10471:10678" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
-            <marker date="1480558097000" expanded="true" signature="10576:10674" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="10773:11011" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="10893:11007" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="11106:11299" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="11197:11295" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12367:12540" placeholder="SELECT * FRO... dbdemo_injury" />
-            <marker date="1480558097000" expanded="true" signature="12446:12536" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="12616:12710" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13015:13191" placeholder="SELECT * FRO... dbdemo_suspended" />
-            <marker date="1480558097000" expanded="true" signature="13097:13187" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13268:13362" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13669:13842" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="13748:13838" placeholder="SELECT * FRO... dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="13918:14012" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="15661:15773" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17172:17422" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="17254:17421" placeholder="SELECT * FRO... dbdemo_playerrank" />
-            <marker date="1480558097000" expanded="true" signature="18894:19178" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="18976:19177" placeholder="SELECT * FRO... dbdemo_consistency" />
-            <marker date="1480558097000" expanded="true" signature="20616:20871" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="20698:20870" placeholder="SELECT * FRO... dbdemo_kicker" />
-            <marker date="1480558097000" expanded="true" signature="22646:23124" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="22728:23123" placeholder="SELECT * FRO... dbdemo_careerstats" />
-            <marker date="1480558097000" expanded="true" signature="24942:25429" placeholder="SELECT name dbdemo_players" />
-            <marker date="1480558097000" expanded="true" signature="25071:25428" placeholder="SELECT * FRO... dbdemo_CareerStats" />
-            <marker date="1480558097000" expanded="true" signature="25071:25429" placeholder="SELECT name dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1078:1121" placeholder="SELECT * FRO... dbdemo_Players" />
+            <marker date="1480563644000" expanded="true" signature="1086:1121" placeholder="select all f... Players" />
+            <marker date="1480563644000" expanded="true" signature="1444:1649" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="1736:1949" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="1839:1945" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2033:2249" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="2139:2245" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2336:2593" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="2467:2589" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="2677:2895" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="2785:2891" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3022:3209" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="3115:3205" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3295:3513" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="3403:3509" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3599:3772" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="3678:3768" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="3878:3918" placeholder="SELECT * FRO... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4126:4354" placeholder="SELECT p.id dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="4512:4653" placeholder="SELECT * FRO... dbdemo_Defense" />
+            <marker date="1480563644000" expanded="true" signature="5776:5819" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="5974:6187" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="6283:6516" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="6398:6512" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6609:6845" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="6727:6841" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="6941:7218" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="7084:7214" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7311:7549" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="7431:7545" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7649:7856" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="7754:7852" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="7951:8189" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="8071:8185" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8284:8477" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="8375:8473" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8676:8719" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="8874:9087" placeholder="SELECT t.nam... dbdemo_team" />
+            <marker date="1480563644000" expanded="true" signature="9183:9416" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="9298:9412" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9509:9745" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="9627:9741" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="9841:10118" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="9984:10114" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10211:10449" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="10331:10445" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10549:10756" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
+            <marker date="1480563644000" expanded="true" signature="10654:10752" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="10851:11089" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="10971:11085" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="11184:11377" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="11275:11373" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12445:12618" placeholder="SELECT * FRO... dbdemo_injury" />
+            <marker date="1480563644000" expanded="true" signature="12524:12614" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="12694:12788" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13093:13269" placeholder="SELECT * FRO... dbdemo_suspended" />
+            <marker date="1480563644000" expanded="true" signature="13175:13265" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13346:13440" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13747:13920" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="13826:13916" placeholder="SELECT * FRO... dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="13996:14090" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="15739:15851" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17250:17500" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="17332:17499" placeholder="SELECT * FRO... dbdemo_playerrank" />
+            <marker date="1480563644000" expanded="true" signature="18972:19256" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="19054:19255" placeholder="SELECT * FRO... dbdemo_consistency" />
+            <marker date="1480563644000" expanded="true" signature="20694:20949" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="20776:20948" placeholder="SELECT * FRO... dbdemo_kicker" />
+            <marker date="1480563644000" expanded="true" signature="22724:23202" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="22806:23201" placeholder="SELECT * FRO... dbdemo_careerstats" />
+            <marker date="1480563644000" expanded="true" signature="25020:25507" placeholder="SELECT name dbdemo_players" />
+            <marker date="1480563644000" expanded="true" signature="25102:25506" placeholder="SELECT * FRO... dbdemo_seasonoffensivestats" />
           </folding>
         </state>
       </provider>
