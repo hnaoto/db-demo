@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Player Matching Criteria</title>
+     {% load staticfiles %}    
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"  >
 </head>
 <body>
     {% if player_list %}
     <table style="50%">
         <tr>
-            <th>Name</th>
+            <th>Search Result Name</th>
         </tr>
         {% for obj in player_list %}
             <tr><td>
-            <a class="button" method="POST" href="/?n={{ obj.name }}">{{ obj.name }}</a>
+            <a  method="POST" href="/?n={{ obj.name }}">{{ obj.name }}</a> 
             </td></tr>
         {% endfor %}
     {% endif %}
