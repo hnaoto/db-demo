@@ -144,7 +144,7 @@ def index(request):
         contractSet = dictfetchall(cursor)
 
         cursor.execute('''SELECT *
-                          FROM dbdemo_Defense AS i,dbdemo_team AS p
+                          FROM dbdemo_defense AS i,dbdemo_team AS p
                           WHERE p.id = i.teamID_id AND p.id = %s''',[teamID])
 
         defenseSet = dictfetchall(cursor)

@@ -42,10 +42,6 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 
 
@@ -186,3 +182,41 @@ button:hover {
   
   
 }
+
+
+
+
+
+		}
+		
+
+		
+td, tr {
+
+    padding: 1em !important;
+  
+}
+
+tr {
+  border-bottom: 2px solid #211f4b;
+  
+  
+}
+tr:nth-child(even) {
+    background-color: #141436;
+}
+
+
+tr:first-child {
+  border-bottom: 2px solid #400f9b;
+  
+  
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    background: #120a1d;
+	
+}
+	
