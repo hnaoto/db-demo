@@ -31,7 +31,7 @@ def index(request):
     name = request.GET.get("n")
     cursor = connection.cursor()
 
-    cursor.execute('''SELECT * FROM dbdemo_Players WHERE name =%s''',[name])
+    cursor.execute('''SELECT * FROM dbdemo_players WHERE name =%s''',[name])
 
     playerSet  = dictfetchall(cursor)
 
@@ -45,75 +45,75 @@ def index(request):
     teamBelong = {}
     if playerSet:
         playerID = playerSet[0]['id']
-
+        #dbdemo_teamplayerrelation
         cursor.execute('''SELECT t.name AS name
-                          FROM dbdemo_Team AS t,dbdemo_Players AS p,dbdemo_TeamPlayerRelation AS c
+                          FROM dbdemo_team AS t,dbdemo_players AS p,dbdemo_teamplayerrelation AS c
                           WHERE t.id = c.teamID_id AND p.id = c.pid_id AND p.id = %s''',[playerID])
 
         teamBelong = dictfetchall(cursor)
 
 
         cursor.execute('''SELECT *
-                  FROM dbdemo_Injury AS r
+                  FROM dbdemo_injury AS r
                   Where EXISTS
                     (SELECT *
-                    FROM dbdemo_Players as p
+                    FROM dbdemo_players as p
                     WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
         InjurySet = dictfetchall(cursor)
 
         cursor.execute('''SELECT *
-                  FROM dbdemo_Suspended AS r
+                  FROM dbdemo_suspended AS r
                   Where EXISTS
                     (SELECT *
-                    FROM dbdemo_Players as p
+                    FROM dbdemo_players as p
                     WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
         SuspendedSet = dictfetchall(cursor)
 
         cursor.execute('''SELECT *
-                          FROM dbdemo_PlayerRank AS r
+                          FROM dbdemo_playerrank AS r
                           Where EXISTS
                             (SELECT *
-                            FROM dbdemo_Players as p
+                            FROM dbdemo_players as p
                             WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
         RankSet = dictfetchall(cursor)
 
 
         cursor.execute('''SELECT *
-                  FROM dbdemo_Consistency AS r
+                  FROM dbdemo_consistency AS r
                   Where EXISTS
                     (SELECT *
-                    FROM dbdemo_Players as p
+                    FROM dbdemo_players as p
                     WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
         ConsistencySet = dictfetchall(cursor)
-
+        #dbdemo_seasonoffensivestats
 
         cursor.execute('''SELECT *
-          FROM dbdemo_SeasonOffensiveStats AS r
+          FROM dbdemo_seasonoffensivestats AS r
           Where EXISTS
             (SELECT *
-            FROM dbdemo_Players as p
+            FROM dbdemo_players as p
             WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
         SeasonSet = dictfetchall(cursor)
 
 
         cursor.execute('''SELECT *
-                  FROM dbdemo_CareerStats AS r
+                  FROM dbdemo_careerstats AS r
                   Where EXISTS
                     (SELECT *
-                    FROM dbdemo_Players as p
+                    FROM dbdemo_players as p
                     WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
         CareerSet = dictfetchall(cursor)
 
 
         cursor.execute('''SELECT *
-          FROM dbdemo_Kicker AS r
+          FROM dbdemo_kicker AS r
           Where EXISTS
             (SELECT *
-            FROM dbdemo_Players as p
+            FROM dbdemo_players as p
             WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
         Kicker = dictfetchall(cursor)
@@ -124,7 +124,7 @@ def index(request):
 
 
 
-    cursor.execute('''SELECT * FROM dbdemo_Team WHERE name =%s''',[name])
+    cursor.execute('''SELECT * FROM dbdemo_team WHERE name =%s''',[name])
     teamSet = dictfetchall(cursor)
 
     print(teamSet)
@@ -136,15 +136,15 @@ def index(request):
         teamID = teamSet[0]['id']
         print(teamID)
         cursor.execute('''SELECT p.id AS playerID,p.name AS playerName
-                          FROM dbdemo_Team AS t,dbdemo_Players AS p,dbdemo_TeamPlayerRelation AS c
+                          FROM dbdemo_team AS t,dbdemo_players AS p,dbdemo_teamplayerrelation AS c
                           WHERE t.id = c.teamID_id AND p.id = c.pid_id AND t.id = %s''',[teamID])
 
-        # cursor.execute('''SELECT * FROM dbdemo_TeamPlayerRelation''')
+        # cursor.execute('''SELECT * FROM dbdemo_teamplayerrelation''')
 
         contractSet = dictfetchall(cursor)
 
         cursor.execute('''SELECT *
-                          FROM dbdemo_Defense AS i,dbdemo_Team AS p
+                          FROM dbdemo_Defense AS i,dbdemo_team AS p
                           WHERE p.id = i.teamID_id AND p.id = %s''',[teamID])
 
         defenseSet = dictfetchall(cursor)
@@ -193,7 +193,7 @@ def compareList(request):
     if name:
         cursor = connection.cursor()
 
-        cursor.execute('''SELECT * FROM dbdemo_Players WHERE name =%s''',[name])
+        cursor.execute('''SELECT * FROM dbdemo_players WHERE name =%s''',[name])
 
         playerSet1  = dictfetchall(cursor)
 
@@ -202,73 +202,73 @@ def compareList(request):
             playerID = playerSet1[0]['id']
 
             cursor.execute('''SELECT t.name AS name
-                              FROM dbdemo_Team AS t,dbdemo_Players AS p,dbdemo_TeamPlayerRelation AS c
+                              FROM dbdemo_team AS t,dbdemo_players AS p,dbdemo_teamplayerrelation AS c
                               WHERE t.id = c.teamID_id AND p.id = c.pid_id AND p.id = %s''',[playerID])
 
             teamBelong1 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-                      FROM dbdemo_Injury AS r
+                      FROM dbdemo_injury AS r
                       Where EXISTS
                         (SELECT *
-                        FROM dbdemo_Players as p
+                        FROM dbdemo_players as p
                         WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
             InjurySet1 = dictfetchall(cursor)
 
             cursor.execute('''SELECT *
-                      FROM dbdemo_Suspended AS r
+                      FROM dbdemo_suspended AS r
                       Where EXISTS
                         (SELECT *
-                        FROM dbdemo_Players as p
+                        FROM dbdemo_players as p
                         WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
             SuspendedSet1 = dictfetchall(cursor)
 
             cursor.execute('''SELECT *
-                              FROM dbdemo_PlayerRank AS r
+                              FROM dbdemo_playerrank AS r
                               Where EXISTS
                                 (SELECT *
-                                FROM dbdemo_Players as p
+                                FROM dbdemo_players as p
                                 WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             RankSet1 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-                      FROM dbdemo_Consistency AS r
+                      FROM dbdemo_consistency AS r
                       Where EXISTS
                         (SELECT *
-                        FROM dbdemo_Players as p
+                        FROM dbdemo_players as p
                         WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             ConsistencySet1 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-              FROM dbdemo_SeasonOffensiveStats AS r
+              FROM dbdemo_seasonoffensivestats AS r
               Where EXISTS
                 (SELECT *
-                FROM dbdemo_Players as p
+                FROM dbdemo_players as p
                 WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             SeasonSet1 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-                      FROM dbdemo_CareerStats AS r
+                      FROM dbdemo_careerstats AS r
                       Where EXISTS
                         (SELECT *
-                        FROM dbdemo_Players as p
+                        FROM dbdemo_players as p
                         WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             CareerSet1 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-              FROM dbdemo_Kicker AS r
+              FROM dbdemo_kicker AS r
               Where EXISTS
                 (SELECT *
-                FROM dbdemo_Players as p
+                FROM dbdemo_players as p
                 WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             Kicker1 = dictfetchall(cursor)
@@ -276,7 +276,7 @@ def compareList(request):
 
         name = request.COOKIES.get('pTwo')
         if name:
-                    cursor.execute('''SELECT * FROM dbdemo_Players WHERE name =%s''',[name])
+                    cursor.execute('''SELECT * FROM dbdemo_players WHERE name =%s''',[name])
 
         playerSet2  = dictfetchall(cursor)
 
@@ -285,73 +285,73 @@ def compareList(request):
             playerID = playerSet2[0]['id']
 
             cursor.execute('''SELECT t.name AS name
-                              FROM dbdemo_Team AS t,dbdemo_Players AS p,dbdemo_TeamPlayerRelation AS c
+                              FROM dbdemo_team AS t,dbdemo_players AS p,dbdemo_teamplayerrelation AS c
                               WHERE t.id = c.teamID_id AND p.id = c.pid_id AND p.id = %s''',[playerID])
 
             teamBelong2 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-                      FROM dbdemo_Injury AS r
+                      FROM dbdemo_injury AS r
                       Where EXISTS
                         (SELECT *
-                        FROM dbdemo_Players as p
+                        FROM dbdemo_players as p
                         WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
             InjurySet2 = dictfetchall(cursor)
 
             cursor.execute('''SELECT *
-                      FROM dbdemo_Suspended AS r
+                      FROM dbdemo_suspended AS r
                       Where EXISTS
                         (SELECT *
-                        FROM dbdemo_Players as p
+                        FROM dbdemo_players as p
                         WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
             SuspendedSet2 = dictfetchall(cursor)
 
             cursor.execute('''SELECT *
-                              FROM dbdemo_PlayerRank AS r
+                              FROM dbdemo_playerrank AS r
                               Where EXISTS
                                 (SELECT *
-                                FROM dbdemo_Players as p
+                                FROM dbdemo_players as p
                                 WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             RankSet2 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-                      FROM dbdemo_Consistency AS r
+                      FROM dbdemo_consistency AS r
                       Where EXISTS
                         (SELECT *
-                        FROM dbdemo_Players as p
+                        FROM dbdemo_players as p
                         WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             ConsistencySet2 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-              FROM dbdemo_SeasonOffensiveStats AS r
+              FROM dbdemo_seasonoffensivestats AS r
               Where EXISTS
                 (SELECT *
-                FROM dbdemo_Players as p
+                FROM dbdemo_players as p
                 WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             SeasonSet2 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-                      FROM dbdemo_CareerStats AS r
+                      FROM dbdemo_careerstats AS r
                       Where EXISTS
                         (SELECT *
-                        FROM dbdemo_Players as p
+                        FROM dbdemo_players as p
                         WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             CareerSet2 = dictfetchall(cursor)
 
 
             cursor.execute('''SELECT *
-              FROM dbdemo_Kicker AS r
+              FROM dbdemo_kicker AS r
               Where EXISTS
                 (SELECT *
-                FROM dbdemo_Players as p
+                FROM dbdemo_players as p
                 WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             Kicker2 = dictfetchall(cursor)
@@ -390,14 +390,14 @@ def compareList(request):
 def injuryDetail(request,person_id):
     cursor = connection.cursor()
     cursor.execute('''SELECT *
-          FROM dbdemo_Injury AS r
+          FROM dbdemo_injury AS r
           Where EXISTS
             (SELECT *
-            FROM dbdemo_Players as p
+            FROM dbdemo_players as p
             WHERE r.pid_id = p.id AND p.id = %s)''',[person_id])
     InjurySet = dictfetchall(cursor)
     cursor.execute('''SELECT name
-                      FROM dbdemo_Players AS p
+                      FROM dbdemo_players AS p
                       WHERE p.id=%s''',[person_id])
     pName = dictfetchall(cursor)
     context = {
@@ -412,14 +412,14 @@ def injuryDetail(request,person_id):
 def suspendedDetail(request,person_id):
     cursor = connection.cursor()
     cursor.execute('''SELECT *
-          FROM dbdemo_Suspended AS r
+          FROM dbdemo_suspended AS r
           Where EXISTS
             (SELECT *
-            FROM dbdemo_Players as p
+            FROM dbdemo_players as p
             WHERE r.pid_id = p.id AND p.id = %s)''',[person_id])
     SuspendSet = dictfetchall(cursor)
     cursor.execute('''SELECT name
-                      FROM dbdemo_Players AS p
+                      FROM dbdemo_players AS p
                       WHERE p.id=%s''',[person_id])
     pName = dictfetchall(cursor)
     context = {
@@ -434,14 +434,14 @@ def suspendedDetail(request,person_id):
 def kickerDetail(request,person_id):
     cursor = connection.cursor()
     cursor.execute('''SELECT *
-          FROM dbdemo_Kicker AS r
+          FROM dbdemo_kicker AS r
           Where EXISTS
             (SELECT *
-            FROM dbdemo_Players as p
+            FROM dbdemo_players as p
             WHERE r.pid_id = p.id AND p.id = %s)''',[person_id])
     KickerSet = dictfetchall(cursor)
     cursor.execute('''SELECT name
-                      FROM dbdemo_Players AS p
+                      FROM dbdemo_players AS p
                       WHERE p.id=%s''',[person_id])
     pName = dictfetchall(cursor)
     context = {
@@ -504,7 +504,7 @@ def Player(request):
     exp = int(exp)
     cursor = connection.cursor()
     sql = '''SELECT name
-          FROM dbdemo_Players AS p
+          FROM dbdemo_players AS p
           Where p.experience > %d
           AND p.position = "%s"'''% (int(exp),position)
     cursor.execute(sql)
@@ -552,10 +552,10 @@ def PlayerRank(request):
 
     cursor = connection.cursor()
     sql = '''SELECT name
-          FROM dbdemo_Players AS p
+          FROM dbdemo_players AS p
           Where EXISTS (
           SELECT *
-          FROM dbdemo_PlayerRank as r
+          FROM dbdemo_playerrank as r
           WHERE r.sugPos = "%s"
           AND r.espnRank < %d
           AND r.nflRank < %d
@@ -609,10 +609,10 @@ def Consistency(request):
 
     cursor = connection.cursor()
     sql = '''SELECT name
-          FROM dbdemo_Players AS p
+          FROM dbdemo_players AS p
           Where EXISTS (
           SELECT *
-          FROM dbdemo_Consistency as r
+          FROM dbdemo_consistency as r
           WHERE r.score > %d
           AND r.eliteScore > %d
           AND r.topScore > %d
@@ -666,10 +666,10 @@ def Kicker(request):
 
     cursor = connection.cursor()
     sql = '''SELECT name
-          FROM dbdemo_Players AS p
+          FROM dbdemo_players AS p
           Where EXISTS (
           SELECT *
-          FROM dbdemo_Kicker as r
+          FROM dbdemo_kicker as r
           WHERE r.fg > %d
           AND r.fga > %d
           AND r.xpa > %d
@@ -729,10 +729,10 @@ def CareerStats(request):
 
     cursor = connection.cursor()
     sql = '''SELECT name
-          FROM dbdemo_Players AS p
+          FROM dbdemo_players AS p
           Where EXISTS (
           SELECT *
-          FROM dbdemo_CareerStats as r
+          FROM dbdemo_careerstats as r
           WHERE r.pointScored > %d
           AND r.passYards > %d
           AND r.rushYards > %d
@@ -798,10 +798,10 @@ def SeasonOffensiveStats(request):
 
     cursor = connection.cursor()
     sql = '''SELECT name
-          FROM dbdemo_Players AS p
+          FROM dbdemo_players AS p
           Where EXISTS (
           SELECT *
-          FROM dbdemo_SeasonOffensiveStats as r
+          FROM dbdemo_seasonoffensivestats as r
           WHERE r.pointScored > %d
           AND r.passYards > %d
           AND r.rushYards > %d
