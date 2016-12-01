@@ -63,18 +63,19 @@
    
 
 </form>
-
+    <button id="addButton" onclick="add();">Add this Player to List</button>
+</section>
 
 {% if player_list %}
-    <button id="addButton" onclick="add();">Add this Player to List</button>
-    <table style="50%">
-        <tr>
+<div class="table" style="padding-left: 50px; padding-top: 100px;">
+    <table style="border: 2px solid white;">
+        <tr style="border: 2px solid white;">
             <th>Name</th> <th>Team</th> <th>Experience</th> <th>Position</th><th>Injury</th>
             <th>Suspended</th><th>Kicker</th>
         </tr>
         {% for obj in player_list %}
 
-            <tr>
+            <tr style="border: 2px solid white;">
                 <td>{{ obj.name }}</td>
                 {% if TeamBelong_list %}
                     {% for team in TeamBelong_list %}
@@ -130,7 +131,7 @@
     </table>
 
     {% for d in Rank_list %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr>
                 <th></th>
                 {% for key,values in d.items %}
@@ -154,7 +155,7 @@
 
 
     {% for d in Consistency_list %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr><th></th>
                 {% for key,values in d.items %}
 
@@ -176,7 +177,7 @@
 
 
     {% for d in Season_list %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr><th></th>
                 {% for key,values in d.items %}
 
@@ -197,7 +198,7 @@
     {% endfor %}
 
     {% for d in Career_list %}
-        <table style="50%">
+        <table style="border: 2px solid white; margin-top: 15px;">
             <tr><th></th>
                 {% for key,values in d.items %}
 
@@ -264,7 +265,7 @@
 
 {% endif %}
 
-</section>
+</div>
 
 
 </body>
