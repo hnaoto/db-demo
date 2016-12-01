@@ -9,6 +9,27 @@
         }
 
     }
+    var forms = ['Player','Consistency','Kicker','PlayerRank','Kicker','stats'];
+
+    $(document).on('change', '#selectCategory', function() {
+        var curv = $('#selectCategory').val();
+
+        for(var i=0;i<forms.length;i++){
+            if(forms[i].localeCompare(curv)!=0) {
+{#                $("body").find('#' + forms[i]).attr('style', function(i, style)#}
+{#            {#}
+{#                return style.replace('*.', 'display:none');#}
+{#            });#}
+                     $("body").find('#' + forms[i]).attr("style", "display:none");
+            }
+        }
+
+        $("body").find('#' + curv).attr('style', function(i, style)
+            {
+                return style.replace(/display[^;]+;?/g, '');
+            });
+    });
+
     </script>
 
 <head>
@@ -17,29 +38,30 @@
 </head>
 <body onload="test();">
 
-<a class="button" href="/">Change to Name Search</a>
+<a class="button" href="/">Change to Name Search</a><br>
+<a>Select Based on:</a><select id='selectCategory'><option value="Player">Player</option><option value="PlayerRank">Player Rank</option>
+<option value="Consistency">Consistency</option><option value="Kicker">Kicker Stats</option><option value="stats">General Stats</option></select>
 
-
-<form action='/advanceSearch/Player/' method='POST'>{% csrf_token %}
+<form style='' id = 'Player' action='/advanceSearch/Player/' method='POST'>{% csrf_token %}
 {{ PlayerForm }}
 <input type="submit" value="search">
 </form>
 <br>
 
 
-<form action='/advanceSearch/PlayerRank/' method='POST'>{% csrf_token %}
+<form style="display:none" id='PlayerRank' action='/advanceSearch/PlayerRank/' method='POST'>{% csrf_token %}
 {{ PlayerRankForm }}
 <input type="submit" value="search">
 </form>
 <br>
 
-<form action='/advanceSearch/Consistency/' method='POST'>{% csrf_token %}
+<form style="display:none" id="Consistency" action='/advanceSearch/Consistency/' method='POST'>{% csrf_token %}
 {{ ConsistencyForm }}
 <input type="submit" value="search">
 </form>
 <br>
 
-<form action='/advanceSearch/Kicker/' method='POST'>{% csrf_token %}
+<form style="display:none" id='Kicker' action='/advanceSearch/Kicker/' method='POST'>{% csrf_token %}
 {{ KickerForm }}
 <input type="submit" value="search">
 </form>
@@ -50,11 +72,13 @@
 {#<input type="submit" value="search">#}
 {#</form>#}
 {#<br>#}
+<dive id="stats" style="display:none">
 <select><option>Seasonal Stats</option><option>Career Stats</option></select>
 <form action='/advanceSearch/SeasonOffensiveStats/' method='POST'>{% csrf_token %}
 {{ SeasonOffensiveStatsForm }}
 <input type="submit" value="search">
 </form>
+</dive>
 <br>
 
 
