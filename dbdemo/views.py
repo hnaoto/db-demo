@@ -355,6 +355,7 @@ def compareList(request):
                 WHERE r.pid_id = p.id AND p.id = %s)''',[playerID])
 
             Kicker2 = dictfetchall(cursor)
+        cursor.close()
 
 
 
@@ -362,7 +363,6 @@ def compareList(request):
 
 
 
-    cursor.close()
     context ={
         "player_list1": playerSet1,
         "TeamBelong_list1":teamBelong1,
